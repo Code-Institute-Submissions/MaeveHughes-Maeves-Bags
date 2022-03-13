@@ -57,9 +57,14 @@ body {
 }
 
 .middle {
-    padding-top: 150px;
+    padding-top: 10px;
 }
 
+.maevesbags {
+    width: 50%;
+    height: 60%;
+    border-radius: 50%;
+}
 
 /* -------------------------------- Media Queries */
 
