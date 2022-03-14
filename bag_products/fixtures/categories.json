@@ -1,0 +1,122 @@
+[
+    {
+      "pk": 1,
+      "model": "bag_products.category",
+      "fields": {
+        "name": "crossbodies",
+        "friendly_name": "Crossbodies"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "bag_products.category",
+      "fields": {
+        "name": "totes",
+        "friendly_name": "Totes"
+      }
+    },
+    {
+      "pk": 3,
+      "model": "bag_products.category",
+      "fields": {
+        "name": "shoulder_bags",
+        "friendly_name": "Shoulder Bags"
+      }
+    },
+    {
+      "pk": 4,
+      "model": "bag_products.category",
+      "fields": {
+        "name": "satchel",
+        "friendly_name": "Satchels"
+      }
+    },
+    {
+      "pk": 5,
+      "model": "bag_products.category",
+      "fields": {
+        "name": "quilted_bags",
+        "friendly_name": "Quilted Bags"
+      }
+    },
+    {
+      "pk": 6,
+      "model": "bag_products.category",
+      "fields": {
+        "name": "bucket_bags",
+        "friendly_name": "Bucket Bags"
+      }
+    },
+    {
+      "pk": 7,
+      "model": "bag_products.category",
+      "fields": {
+        "name": "backpacks",
+        "friendly_name": "Backpacks"
+      }
+    },
+    {
+      "pk": 8,
+      "model": "bag_products.category",
+      "fields": {
+        "name": "prada",
+        "friendly_name": "Prada"
+      }
+    },
+    {
+      "pk": 9,
+      "model": "bag_products.category",
+      "fields": {
+        "name": "marc_jacobs",
+        "friendly_name": "Marc Jacobs"
+      }
+    }
+    {
+      "pk":10,
+      "model": "bag_products.category",
+      "fields": {
+        "name": "chanel",
+        "friendly_name": "Chanel"
+      }
+    }
+    {
+      "pk":11,
+      "model": "bag_products.category",
+      "fields": {
+        "name": "mulberry",
+        "friendly_name": "Mulberry"
+      }
+    }
+    {
+      "pk":12,
+      "model": "bag_products.category",
+      "fields": {
+        "name": "gucci",
+        "friendly_name": "Gucci"
+      }
+    }
+    {
+      "pk":13,
+      "model": "bag_products.category",
+      "fields": {
+        "name": "new_arrivals",
+        "friendly_name": "New Arrivals"
+      }
+    }
+    {
+      "pk":14,
+      "model": "bag_products.category",
+      "fields": {
+        "name": "deals",
+        "friendly_name": "Deals"
+      }
+    }
+    {
+      "pk":15,
+      "model": "bag_products.category",
+      "fields": {
+        "name": "clearance",
+        "friendly_name": "Clearance"
+      }
+    }
+  ]
