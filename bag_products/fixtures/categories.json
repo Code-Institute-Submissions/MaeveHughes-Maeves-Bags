@@ -70,7 +70,7 @@
         "name": "marc_jacobs",
         "friendly_name": "Marc Jacobs"
       }
-    }
+    },
     {
       "pk":10,
       "model": "bag_products.category",
@@ -78,7 +78,7 @@
         "name": "chanel",
         "friendly_name": "Chanel"
       }
-    }
+    },
     {
       "pk":11,
       "model": "bag_products.category",
@@ -86,7 +86,7 @@
         "name": "mulberry",
         "friendly_name": "Mulberry"
       }
-    }
+    },
     {
       "pk":12,
       "model": "bag_products.category",
@@ -94,7 +94,7 @@
         "name": "gucci",
         "friendly_name": "Gucci"
       }
-    }
+    },
     {
       "pk":13,
       "model": "bag_products.category",
@@ -102,7 +102,7 @@
         "name": "new_arrivals",
         "friendly_name": "New Arrivals"
       }
-    }
+    },
     {
       "pk":14,
       "model": "bag_products.category",
@@ -110,7 +110,7 @@
         "name": "deals",
         "friendly_name": "Deals"
       }
-    }
+    },
     {
       "pk":15,
       "model": "bag_products.category",
