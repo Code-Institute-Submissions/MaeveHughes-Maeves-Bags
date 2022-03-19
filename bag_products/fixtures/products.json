@@ -15,7 +15,7 @@
     },
     {
       "pk": 2,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5001600425",
         "name": " Women's Limited Edition Green Quilted Lambskin Leather Cc Backpack ",
@@ -43,7 +43,7 @@
     },
     {
       "pk": 4,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5001890157",
         "name": " Chanel Small Gabrielle Bucket Bag ",
@@ -57,7 +57,7 @@
     },
     {
       "pk": 5,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5002111605",
         "name": "Chanel Women Mini Bucket Bag Calfskin Imitation Pearls Gold Tone Metal White",
@@ -71,7 +71,7 @@
     },
     {
       "pk": 6,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5002260206",
         "name": "Chanel bucket bag",
@@ -85,7 +85,7 @@
     },
     {
       "pk": 7,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5002440521",
         "name": "Chanel medium Double Flap shoulder bag",
@@ -99,7 +99,7 @@
     },
     {
       "pk": 8,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5002601115",
         "name": "Chanel 1985-1993 mini diamond quilt chain crossbody bag",
@@ -113,7 +113,7 @@
     },
     {
       "pk": 9,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5002690715",
         "name": "Pink Quilted Matte Caviar Leather Classic Medium Double Flap Bag",
@@ -127,7 +127,7 @@
     },
     {
       "pk": 10,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5002701115",
         "name": "Chanel Classic Red Quilted Lambskin Leather CC Rhinestones Flap Shoulder Bag",
@@ -141,7 +141,7 @@
     },
     {
       "pk": 11,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5002761055",
         "name": "Metallic Classic Chanel",
@@ -155,7 +155,7 @@
     },
     {
       "pk": 12,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5002820069",
         "name": "Chanel Black Leather Gold Carryall Travel Stitch Top Handle Satchel Bag ",
@@ -169,7 +169,7 @@
     },
     {
       "pk": 13,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5002820147",
         "name": "Chanel Mini Timeless shoulder bag",
@@ -183,7 +183,7 @@
     },
     {
       "pk": 14,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5002910572",
         "name": "CHANEL Quilted Leather CC Logo Shoulder Bag Red",
@@ -197,7 +197,7 @@
     },
     {
       "pk": 15,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5002990740",
         "name": "CHANEL Matelasse Tassel fringe Shoulder Bag Lambskin Leather Green",
@@ -211,7 +211,7 @@
     },
     {
       "pk": 16,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5003050248",
         "name": "CHANEL VINTAGE CAVIAR GRAND SHOPPING TOTE BAG WITH GOLD HARDWARE NM",
@@ -225,7 +225,7 @@
     },
     {
       "pk": 17,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5003070787",
         "name": "Chanel LARGE TOTE",
@@ -239,7 +239,7 @@
     },
     {
       "pk": 18,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5003090182",
         "name": "Chanel Deauville Pearl Tote Bag",
@@ -253,7 +253,7 @@
     },
     {
       "pk": 19,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5003090186",
         "name": "Ophidia Gucci small backpack",
@@ -267,7 +267,7 @@
     },
     {
       "pk": 20,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5003161326",
         "name": "Gucci Black backpack",
@@ -281,7 +281,7 @@
     },
     {
       "pk": 21,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5003230723",
         "name": "Gucci Eden small backpack",
@@ -295,7 +295,7 @@
     },
     {
       "pk": 22,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5003270936",
         "name": "Ophidia Gucci medium backpack",
@@ -309,7 +309,7 @@
     },
     {
       "pk": 23,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5003360384",
         "name": "Gucci Marmont mini bucket bag",
@@ -323,7 +323,7 @@
     },
     {
       "pk": 24,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5003440111",
         "name": "Ophidia GG mini bucket bag",
@@ -337,7 +337,7 @@
     },
     {
       "pk": 25,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5003540313",
         "name": "Gucci Marmont mini bucket bag",
@@ -351,7 +351,7 @@
     },
     {
       "pk": 26,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5003560513",
         "name": "Gucci Horsebit 1955 small shoulder bag ",
@@ -365,7 +365,7 @@
     },
     {
       "pk": 27,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5003560948",
         "name": "Ophidia mini Gucci Supreme cross-body bag",
@@ -379,7 +379,7 @@
     },
     {
       "pk": 28,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5003570628",
         "name": "Small Gucci Supreme Ophidia Shoulder Bag",
@@ -393,7 +393,7 @@
     },
     {
       "pk": 29,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5003620308",
         "name": "Gucci Marmont matelassé mini bag",
@@ -407,7 +407,7 @@
     },
     {
       "pk": 30,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5003690115",
         "name": "Gucci Marmont matelassé shoulder bag",
@@ -421,7 +421,7 @@
     },
     {
       "pk": 31,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5003690116",
         "name": "Gucci Marmont super mini bag",
@@ -435,7 +435,7 @@
     },
     {
       "pk": 32,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5003780391",
         "name": "GUCCI Brown Calfskin Leather Vintage Web Medium Webby Satchel Bag",
@@ -449,7 +449,7 @@
     },
     {
       "pk": 33,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5003790542",
         "name": "Gucci Brown Leather GG Monogram Coated Canvas Satchel Grab Bag HandBag",
@@ -463,7 +463,7 @@
     },
     {
       "pk": 34,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5003831225",
         "name": "Ophidia Gucci medium tote",
@@ -477,7 +477,7 @@
     },
     {
       "pk": 35,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5003861402",
         "name": "Gucci Off The Grid tote bag",
@@ -491,7 +491,7 @@
     },
     {
       "pk": 36,
-          "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5003910638",
         "name": "The Marc Jacobs Backpack",
@@ -505,7 +505,7 @@
     },
     {
       "pk": 37,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5003950574",
         "name": " Marc Jacobs 'The Backpack' logo-print backpack",
@@ -519,7 +519,7 @@
     },
     {
       "pk": 38,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5003950576",
         "name": " Marc Jacobs Women's Black Appliquéd Printed Shell Backpack",
@@ -533,7 +533,7 @@
     },
     {
       "pk": 39,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5003960062",
         "name": " MARC JACOBS The Pouch Nylon Backpack In Blue",
@@ -547,7 +547,7 @@
     },
     {
       "pk": 40,
-     "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5003960682",
         "name": " The Marc Jacobs The Bucket Bag Leather Crossbody Bag",
@@ -561,7 +561,7 @@
     },
     {
       "pk": 41,
-     "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5003960775",
         "name": " Marc Jacobs The Bucket Bag",
@@ -575,7 +575,7 @@
     },
     {
       "pk": 42,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5003990736",
         "name": " MARC JACOBS Mini Rider Crossbody Bag",
@@ -589,7 +589,7 @@
     },
     {
       "pk": 43,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5003990746",
         "name": " The Marc Jacobs Everyday Cross-Body Bag",
@@ -603,7 +603,7 @@
     },
     {
       "pk": 44,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5004111503",
         "name": " MARC JACOBS CROSSBODY BAG WOMEN LEATHER VIOLET",
@@ -617,7 +617,7 @@
     },
     {
       "pk": 45,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5004230059",
         "name": " Marc Jacobs Square Shaped Crossbody Bag - Yellow",
@@ -631,7 +631,7 @@
     },
     {
       "pk": 46,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5004310089",
         "name": " Quilted Medium Tote Bag Marc Jacobs",
@@ -645,7 +645,7 @@
     },
     {
       "pk": 47,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5004610254",
         "name": "Marc Jacobs Quilted Cross Body Bag",
@@ -659,7 +659,7 @@
     },
     {
       "pk": 48,
-       "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5004650050",
         "name": " NWT Marc by Marc Jacobs Too Hot to Handle Leather Satchel Crossbody Bag BLACK",
@@ -673,7 +673,7 @@
     },
     {
       "pk": 49,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5004821375",
         "name": "Marc Jacobs Voyager Mini Satchel Crossbody",
@@ -687,7 +687,7 @@
     },
     {
       "pk": 50,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5004900522",
         "name": "MARC JACOBS (THE)SNAPSHOT LEATHER SHOULDER BAG",
@@ -701,7 +701,7 @@
     },
     {
       "pk": 51,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5004910158",
         "name": "MARC JACOBS THE SOFTSHOT 21 IN CEMENT & BLACK",
@@ -715,7 +715,7 @@
     },
     {
       "pk": 52,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5004910477",
         "name": "MARC JACOBS The Large Jacquard Tote",
@@ -729,7 +729,7 @@
     },
     {
       "pk": 53,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5004940703",
         "name": "THE TOTE BAG MARC JACOBS",
@@ -743,7 +743,7 @@
     },
     {
       "pk": 54,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5004991006",
         "name": "MARC JACOBS The The small canvas tote bag - Black",
@@ -757,7 +757,7 @@
     },
     {
       "pk": 55,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5004991162",
         "name": "Mulberry Heritage Backpack Mole & Cognac Scotchgrain",
@@ -771,7 +771,7 @@
     },
     {
       "pk": 56,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5005000046",
         "name": "Mulberry Zipped Backpack Pale Navy Heavy Grain",
@@ -785,7 +785,7 @@
     },
     {
       "pk": 57,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5005070254",
         "name": "Mulberry Abbey Small Classic Grain Leather Bucket Bag, Oxblood",
@@ -799,7 +799,7 @@
     },
     {
       "pk": 58,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5005071145",
         "name": "Mulberry Lynton Mini Bucket Bag",
@@ -813,7 +813,7 @@
     },
     {
       "pk": 59,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5005140282",
         "name": "MULBERRY Darley branded leather cross-body bag",
@@ -827,7 +827,7 @@
     },
     {
       "pk": 60,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5005200166",
         "name": "Mulberry Amberley satchel small",
@@ -841,7 +841,7 @@
     },
     {
       "pk": 61,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5005210241",
         "name": "Mulberry Small Darley Small Classic Grain Leather Cross Body Bag, Pale Slate",
@@ -855,7 +855,7 @@
     },
     {
       "pk": 62,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5005280104",
         "name": "MULBERRY Darley quilted leather shoulder bag",
@@ -869,7 +869,7 @@
     },
     {
       "pk": 63,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5005310360",
         "name": "Mulberry Small Darley Quilted Metallic Buffalo Leather Shoulder Bag, Antique Gold",
@@ -883,7 +883,7 @@
     },
     {
       "pk": 64,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5005330595",
         "name": "MULBERRY Alexa Oversized Satchel Bag",
@@ -897,7 +897,7 @@
     },
     {
       "pk": 65,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5005330596",
         "name": "MULBERRY Alexa Satchel Bag",
@@ -911,7 +911,7 @@
     },
     {
       "pk": 66,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5005430914",
         "name": "MULBERRY Darley Shoulder Bag",
@@ -925,7 +925,7 @@
     },
     {
       "pk": 67,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5005430944",
         "name": "Mulberry Antony Messenger Oak Natural Grain Leather",
@@ -939,7 +939,7 @@
     },
     {
       "pk": 68,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5005510265",
         "name": "Mulberry Lily small shoulder bag",
@@ -953,7 +953,7 @@
     },
     {
       "pk": 69,
-     "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5005520201",
         "name": "Darley Shoulder Bag Mulberry Green Heavy Grain",
@@ -967,7 +967,7 @@
     },
     {
       "pk": 70,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5005520205",
         "name": "Bayswater Tote Burgundy Small Classic Grain Mulberry",
@@ -981,7 +981,7 @@
     },
     {
       "pk": 71,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5005630545",
         "name": "MULBERRY Bayswater Tote Bag",
@@ -995,7 +995,7 @@
     },
     {
       "pk": 72,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5005630605",
         "name": "PRADA Nylon backpack",
@@ -1009,7 +1009,7 @@
     },
     {
       "pk": 73,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5005630637",
         "name": "Vintage Prada Backpack Black Green Silver hardware",
@@ -1023,7 +1023,7 @@
     },
     {
       "pk": 74,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5005630638",
         "name": "Prada Brown Nylon Drawstring Backpack",
@@ -1037,7 +1037,7 @@
     },
     {
       "pk": 75,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5005650677",
         "name": "Prada Leather Bucket Bag",
@@ -1051,7 +1051,7 @@
     },
     {
       "pk": 76,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5005700140",
         "name": "Prada drawstring-fastening logo bucket bag",
@@ -1065,7 +1065,7 @@
     },
     {
       "pk": 77,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5005740430",
         "name": "Prada Pink Diagramme Leather Camera Crossbody Bag",
@@ -1079,7 +1079,7 @@
     },
     {
       "pk": 78,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5005740561",
         "name": "Prada sequinned logo-print mesh tote bag",
@@ -1093,7 +1093,7 @@
     },
     {
       "pk": 79,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5005740634",
         "name": "Prada Crossbody Bag",
@@ -1107,7 +1107,7 @@
     },
     {
       "pk": 80,
-      "model": " bag_products.product ",
+      "model": "bag_products.product",
       "fields": {
         "sku": "pp5005760088",
         "name": "Prada Leather tote",
