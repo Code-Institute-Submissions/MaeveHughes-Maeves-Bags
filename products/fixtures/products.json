@@ -43,7 +43,7 @@
     },
     {
       "pk": 4,
-      "model": "bag_products.product",
+      "model": "products.product",
       "fields": {
         "sku": "pp5001890157",
         "name": " Chanel Small Gabrielle Bucket Bag ",
