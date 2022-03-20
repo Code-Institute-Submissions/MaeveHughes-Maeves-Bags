@@ -43,8 +43,8 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'home',
-    'bag_products',
-]
+    'products',
+    ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
