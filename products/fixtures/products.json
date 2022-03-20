@@ -18,12 +18,12 @@
       "model": "products.product",
       "fields": {
         "sku": "pp5001600425",
-        "name": " Women's Limited Edition Green Quilted Lambskin Leather Cc Backpack ",
-        "description": " The interior is lined with canvas. Moderate corner wear. Marking to exterior flap of bag. Faint scratching to hardware. Minor creasing throughout. Loss of shape.",
+        "name": "Women's Limited Edition Green Quilted Lambskin Leather Cc Backpack ",
+        "description": "The interior is lined with canvas. Moderate corner wear. Marking to exterior flap of bag. Faint scratching to hardware. Minor creasing throughout. Loss of shape.",
         "price": 4600,
         "category": 7,
         "rating": 4.6,
-        "image_url": " https://cdna.lystit.com/200/250/tr/photos/gilt/27d7951f/chanel-Green-Limited-Edition-Green-Quilted-Lambskin-Leather-Cc-Backpack-Never-Carried-authentic-Pre-owned.jpeg ",
+        "image_url": "https://cdna.lystit.com/200/250/tr/photos/gilt/27d7951f/chanel-Green-Limited-Edition-Green-Quilted-Lambskin-Leather-Cc-Backpack-Never-Carried-authentic-Pre-owned.jpeg ",
   "image": "chanel backpack 2.jpeg"
       }
     },
@@ -32,8 +32,8 @@
       "model": "products.product",
       "fields": {
         "sku": "pp5001730010",
-        "name": " Chanel Drawstring Bucket Bag in Black ",
-        "description": " Crafted from navy blue diamond-quilted leather, this drawstring bucket bag displays the iconic motif to the front for an instantly recognisable look. ",
+        "name": "Chanel Drawstring Bucket Bag in Black ",
+        "description": "Crafted from navy blue diamond-quilted leather, this drawstring bucket bag displays the iconic motif to the front for an instantly recognisable look. ",
         "price": 4811,
         "category": 6,
         "rating": 4.7,
@@ -46,12 +46,12 @@
       "model": "products.product",
       "fields": {
         "sku": "pp5001890157",
-        "name": " Chanel Small Gabrielle Bucket Bag ",
-        "description": " This small Gabrielle bucket bag from the 2017 collection features a white leather soft body covered with two black quilted leather parts connected with small ruthenium chains. Featuring a ruthenium and gold coated chain entwined with white leather. Closing with an iconic CC gold coated clasp and with a red satin interior. Made in France.",
+        "name": "Chanel Small Gabrielle Bucket Bag ",
+        "description": "This small Gabrielle bucket bag from the 2017 collection features a white leather soft body covered with two black quilted leather parts connected with small ruthenium chains. Featuring a ruthenium and gold coated chain entwined with white leather. Closing with an iconic CC gold coated clasp and with a red satin interior. Made in France.",
         "price": 2500,
         "category": 6,
         "rating": 3,
-        "image_url": " https://uk.static.designerexchange.com/product_images/uk/Handbags/HB%20-%20Chanel/SHANCHA220849_1_XL.JPG ",
+        "image_url": "https://uk.static.designerexchange.com/product_images/uk/Handbags/HB%20-%20Chanel/SHANCHA220849_1_XL.JPG ",
         "image": "chanel bucket 2.jpeg"
       }
     },
@@ -61,7 +61,7 @@
       "fields": {
         "sku": "pp5002111605",
         "name": "Chanel Women Mini Bucket Bag Calfskin Imitation Pearls Gold Tone Metal White",
-        "description": " Chanel bucket bag If you already own your preferred leather bag, go with this flap bag decorated with pearl and caviar. The mini measurement makes it ideal for going out at night. Chanel in each period contains some fantastic works, their latest is this bucket clutch. This can of course be paired with a ruffled tulle dress for a fantastic look, or with your favorite shirt and shorts. ",
+        "description": "Chanel bucket bag If you already own your preferred leather bag, go with this flap bag decorated with pearl and caviar. The mini measurement makes it ideal for going out at night. Chanel in each period contains some fantastic works, their latest is this bucket clutch. This can of course be paired with a ruffled tulle dress for a fantastic look, or with your favorite shirt and shorts. ",
         "price": 329,
         "category": 6,
         "rating": 5,
@@ -93,7 +93,7 @@
         "price": 7162,
         "category": 3,
         "rating": 4.4,
-        "image_url": " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBrvGNKy_Zf9615fuEI6n8HVf_715BI-xDnw&usqp=CAU",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBrvGNKy_Zf9615fuEI6n8HVf_715BI-xDnw&usqp=CAU",
         "image": "chanel cross body 2.jpeg"
       }
     },
@@ -121,7 +121,7 @@
         "price": 5600,
         "category": 5,
         "rating": 4.7,
-        "image_url": " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsSe_j3tqW3UL3_L8mnGz42D1534x7WGKqWg&usqp=CAU ",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsSe_j3tqW3UL3_L8mnGz42D1534x7WGKqWg&usqp=CAU ",
         "image": "chanel quilted 1.jpeg"
       }
     },
@@ -318,7 +318,7 @@
         "category": 6,
         "rating": 4.8,
         "image_url": "https://media.gucci.com/style/DarkGray_Center_0_0_800x800/1558714510/575163_DTDRT_1000_001_065_0014_Light-GG-Marmont-mini-bucket-bag.jpg",
-        "image": "gucci bucket 1.jpeg "
+        "image": "gucci bucket 1.jpeg"
       }
     },
     {
@@ -332,7 +332,9 @@
         "category": 6,
         "rating": 3.8,
         "image_url": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/8d/P00368593.jpg",
-        "image": "gucci bucket 2.jpeg "
+        "image": "gucci bucket 2.jpe
+        
+        "
       }
     },
     {
@@ -430,7 +432,7 @@
         "category": 5,
         "rating": 4,
         "image_url": "https://media.gucci.com/style/White_South_0_160_316x316/1645001110/447632_UM8BF_4340_002_067_0024_Light.jpg ",
-        "image": "gucci quilted 2.jpeg" 
+        "image": "gucci quilted 2.jpeg"
       }
     },
     {
@@ -508,13 +510,13 @@
       "model": "products.product",
       "fields": {
         "sku": "pp5003950574",
-        "name": " Marc Jacobs 'The Backpack' logo-print backpack",
-        "description": " Marc Jacobs' The Backpack is realised in all-over leopard print. Crafted from cotton, the backpack is built with adjustable straps and a double zip-around closure. Its interior houses a spacious main compartment and back wall pocket. A zipped pouch compartment and side pockets also feature to the exterior.",
+        "name": "Marc Jacobs 'The Backpack' logo-print backpack",
+        "description": "Marc Jacobs' The Backpack is realised in all-over leopard print. Crafted from cotton, the backpack is built with adjustable straps and a double zip-around closure. Its interior houses a spacious main compartment and back wall pocket. A zipped pouch compartment and side pockets also feature to the exterior.",
         "price": 270,
         "category": 7,
         "rating": 4,
-        "image_url": " https://cdna.lystit.com/200/250/n/photos/zappos/550e599f/marc-jacobs-Black-The-Backpack.jpeg",
-        "image": " MJ BP 2.jpeg"
+        "image_url": "https://cdna.lystit.com/200/250/n/photos/zappos/550e599f/marc-jacobs-Black-The-Backpack.jpeg",
+        "image": "MJ BP 2.jpeg"
       }
     },
     {
@@ -522,13 +524,13 @@
       "model": "products.product",
       "fields": {
         "sku": "pp5003950576",
-        "name": " Marc Jacobs Women's Black Appliquéd Printed Shell Backpack",
-        "description": " Backpack Printed Shell Silver hardware Eyelets Patch Leather trims Two adjustable shoulder straps Detachable key fob Detachable charm Two-way zip fastening along top and sides Zipped front pocket This bag will fit your essentials, plus a tablet.",
+        "name": "Marc Jacobs Women's Black Appliquéd Printed Shell Backpack",
+        "description": "Backpack Printed Shell Silver hardware Eyelets Patch Leather trims Two adjustable shoulder straps Detachable key fob Detachable charm Two-way zip fastening along top and sides Zipped front pocket This bag will fit your essentials, plus a tablet.",
         "price": 194,
         "category": 7,
         "rating": 4.5,
-        "image_url": " https://cdna.lystit.com/200/250/tr/photos/farfetch/9f76209d/marc-jacobs-Black-The-Pictogram-Backpack.jpeg",
-        "image": " MJ BP 3.jpeg"
+        "image_url": "https://cdna.lystit.com/200/250/tr/photos/farfetch/9f76209d/marc-jacobs-Black-The-Pictogram-Backpack.jpeg",
+        "image": "MJ BP 3.jpeg"
       }
     },
     {
@@ -536,13 +538,13 @@
       "model": "products.product",
       "fields": {
         "sku": "pp5003960062",
-        "name": " MARC JACOBS The Pouch Nylon Backpack In Blue",
-        "description": " Blue/black The Zipper backpack from Marc Jacobs featuring logo patch to the front, single top handle, adjustable shoulder straps, all-around zip fastening, main compartment, internal slip pocket, internal logo patch, front zip-fastening pocket, front zip-fastening compartment and silver-tone hardware.",
+        "name": "MARC JACOBS The Pouch Nylon Backpack In Blue",
+        "description": "Blue/black The Zipper backpack from Marc Jacobs featuring logo patch to the front, single top handle, adjustable shoulder straps, all-around zip fastening, main compartment, internal slip pocket, internal logo patch, front zip-fastening pocket, front zip-fastening compartment and silver-tone hardware.",
         "price": 168,
         "category": 7,
         "rating": 3.8,
-        "image_url": " https://cdn-images.farfetch-contents.com/16/77/52/93/16775293_33190051_1000.jpg",
-        "image": " MJ BP 4.jpeg"
+        "image_url": "https://cdn-images.farfetch-contents.com/16/77/52/93/16775293_33190051_1000.jpg",
+        "image": "MJ BP 4.jpeg"
       }
     },
     {
@@ -550,13 +552,13 @@
       "model": "products.product",
       "fields": {
         "sku": "pp5003960682",
-        "name": " The Marc Jacobs The Bucket Bag Leather Crossbody Bag",
-        "description": " The bucket bag leather crossbody bag in cream ",
+        "name": "The Marc Jacobs The Bucket Bag Leather Crossbody Bag",
+        "description": "The bucket bag leather crossbody bag in cream ",
         "price": 297,
         "category": 6,
         "rating": 5,
-        "image_url": " https://media1.popsugar-assets.com/files/thumbor/B6BhKBJUPF-yr21jXY6nDq9SgiY/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2020/11/23/816/n/1922564/394cb4a00a21b9a0_netimgPOd1wf/i/Marc-Jacobs-Bucket-Bag-Leather-Crossbody-Bag.jpg",
-        "image": " MJ bucket bag 2.jpeg"
+        "image_url": "https://media1.popsugar-assets.com/files/thumbor/B6BhKBJUPF-yr21jXY6nDq9SgiY/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2020/11/23/816/n/1922564/394cb4a00a21b9a0_netimgPOd1wf/i/Marc-Jacobs-Bucket-Bag-Leather-Crossbody-Bag.jpg",
+        "image": "MJ bucket bag 2.jpeg"
       }
     },
     {
@@ -564,13 +566,13 @@
       "model": "products.product",
       "fields": {
         "sku": "pp5003960775",
-        "name": " Marc Jacobs The Bucket Bag",
-        "description": " Grained coated leather bucket bag highlighted with goldtone logo hardware, finished with adjustable striped strap.",
+        "name": "Marc Jacobs The Bucket Bag",
+        "description": "Grained coated leather bucket bag highlighted with goldtone logo hardware, finished with adjustable striped strap.",
         "price": 450,
         "category": 6,
         "rating": 3,
-        "image_url": " https://image.s5a.com/is/image/saks/0400014643248_ROCKGREY?wid=480&hei=640&qlt=90&resMode=sharp2&op_usm=0.9,1.0,8,0",
-        "image": " MJ bucket bag. 1.jpeg"
+        "image_url": "https://image.s5a.com/is/image/saks/0400014643248_ROCKGREY?wid=480&hei=640&qlt=90&resMode=sharp2&op_usm=0.9,1.0,8,0",
+        "image": "MJ bucket bag. 1.jpeg"
       }
     },
     {
@@ -578,13 +580,13 @@
       "model": "products.product",
       "fields": {
         "sku": "pp5003990736",
-        "name": " MARC JACOBS Mini Rider Crossbody Bag",
-        "description": " Versatile saddle shaped bag with classic goldtone hardware..",
+        "name": "MARC JACOBS Mini Rider Crossbody Bag",
+        "description": "Versatile saddle shaped bag with classic goldtone hardware..",
         "price": 120,
         "category": 1,
         "rating": 4.7,
-        "image_url": " https://cdna.lystit.com/200/250/tr/photos/saksoff5th/8c53d136/marc-jacobs-Black-Mini-Rider-Crossbody-Bag.jpeg",
-        "image": " mj cross body 1.jpeg"
+        "image_url": "https://cdna.lystit.com/200/250/tr/photos/saksoff5th/8c53d136/marc-jacobs-Black-Mini-Rider-Crossbody-Bag.jpeg",
+        "image": "mj cross body 1.jpeg"
       }
     },
     {
@@ -592,13 +594,13 @@
       "model": "products.product",
       "fields": {
         "sku": "pp5003990746",
-        "name": " The Marc Jacobs Everyday Cross-Body Bag",
-        "description": " True to its name, The Marc Jacobs Everyday cross-body bag will be a faithful companion through all your day and nighttime adventures. A compartmentalised zip function and just-compact-enough size offer practicality, while the gold-tone chain strap adds instant polish – whether you wear it across the body or double it up to sling over the shoulder.",
+        "name": "The Marc Jacobs Everyday Cross-Body Bag",
+        "description": "True to its name, The Marc Jacobs Everyday cross-body bag will be a faithful companion through all your day and nighttime adventures. A compartmentalised zip function and just-compact-enough size offer practicality, while the gold-tone chain strap adds instant polish – whether you wear it across the body or double it up to sling over the shoulder.",
         "price": 160,
         "category": 1,
         "rating": 4,
-        "image_url": " https://image.harrods.com/16/79/22/06/16792206_33095420_2048.jpg",
-        "image": " mj cross body 2.jpeg"
+        "image_url": "https://image.harrods.com/16/79/22/06/16792206_33095420_2048.jpg",
+        "image": "mj cross body 2.jpeg"
       }
     },
     {
@@ -606,13 +608,13 @@
       "model": "products.product",
       "fields": {
         "sku": "pp5004111503",
-        "name": " MARC JACOBS CROSSBODY BAG WOMEN LEATHER VIOLET",
-        "description": " women's crossbody bag in violet designed by Marc Jacobs. It has features like front detail, side detail.",
+        "name": "MARC JACOBS CROSSBODY BAG WOMEN LEATHER VIOLET",
+        "description": "women's crossbody bag in violet designed by Marc Jacobs. It has features like front detail, side detail.",
         "price": 372,
         "category": 1,
         "rating": 4.9,
-        "image_url": " https://bexit.gumlet.io/pub/media/catalog/product/i/m/img_2D_0001_82777_1.jpg?w=440&h=440&trim=35&mode=fill&pad=30",
-        "image": " mj cross body 3.jpeg"
+        "image_url": "https://bexit.gumlet.io/pub/media/catalog/product/i/m/img_2D_0001_82777_1.jpg?w=440&h=440&trim=35&mode=fill&pad=30",
+        "image": "mj cross body 3.jpeg"
       }
     },
     {
@@ -620,13 +622,13 @@
       "model": "products.product",
       "fields": {
         "sku": "pp5004230059",
-        "name": " Marc Jacobs Square Shaped Crossbody Bag - Yellow",
-        "description": " Marc Jacobs embraces a youthful energy around the collection - with emphasis upon detailing and a bohemian theme. From form-fitting minimalist silhouettes to sleek tailored pieces, the brand has stylish unique pieces for every occasion. This yellow leather square shaped crossbody bag from Marc Jacobs featuring a round top handle, a shoulder strap and silver-tone hardware.",
+        "name": "Marc Jacobs Square Shaped Crossbody Bag - Yellow",
+        "description": "Marc Jacobs embraces a youthful energy around the collection - with emphasis upon detailing and a bohemian theme. From form-fitting minimalist silhouettes to sleek tailored pieces, the brand has stylish unique pieces for every occasion. This yellow leather square shaped crossbody bag from Marc Jacobs featuring a round top handle, a shoulder strap and silver-tone hardware.",
         "price": 415,
         "category": 1,
         "rating": 4.6,
-        "image_url": " https://cdn.modesens.com/product/9656668",
-        "image": " mj cross body 4.jpeg"
+        "image_url": "https://cdn.modesens.com/product/9656668",
+        "image": "mj cross body 4.jpeg"
       }
     },
     {
@@ -634,13 +636,13 @@
       "model": "products.product",
       "fields": {
         "sku": "pp5004310089",
-        "name": " Quilted Medium Tote Bag Marc Jacobs",
-        "description": " A medium sized tote bag is perfect for a go-anywhere style and features a quilted design.",
+        "name": "Quilted Medium Tote Bag Marc Jacobs",
+        "description": "A medium sized tote bag is perfect for a go-anywhere style and features a quilted design.",
         "price": 100,
         "category": 5,
         "rating": 4.5,
-        "image_url": " https://n.nordstrommedia.com/id/sr3/f1f04fc2-bfff-4548-ba86-c5ccb8c64d6d.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=780&h=838",
-        "image": " MJ Quilted 2.jpeg"
+        "image_url": "https://n.nordstrommedia.com/id/sr3/f1f04fc2-bfff-4548-ba86-c5ccb8c64d6d.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=780&h=838",
+        "image": "MJ Quilted 2.jpeg"
       }
     },
     {
@@ -649,12 +651,12 @@
       "fields": {
         "sku": "pp5004610254",
         "name": "Marc Jacobs Quilted Cross Body Bag",
-        "description": " Navy quilted leather crossbody bag with gold-tone hardware and chain strap. Foldover front with clasp fastening.",
+        "description": "Navy quilted leather crossbody bag with gold-tone hardware and chain strap. Foldover front with clasp fastening.",
         "price": 442,
         "category": 5,
         "rating": 5,
-        "image_url": " https://cdn.mywardrobehq.com/c/c/3/5224/5e590b0b01c66.jpg",
-        "image": " MJ Quilted 3.jpeg"
+        "image_url": "https://cdn.mywardrobehq.com/c/c/3/5224/5e590b0b01c66.jpg",
+        "image": "MJ Quilted 3.jpeg"
       }
     },
     {
@@ -662,13 +664,13 @@
       "model": "products.product",
       "fields": {
         "sku": "pp5004650050",
-        "name": " NWT Marc by Marc Jacobs Too Hot to Handle Leather Satchel Crossbody Bag BLACK",
-        "description": " NWT Marc by Marc Jacobs Too Hot to Handle Leather Satchel Crossbody Bag BLACK",
+        "name": "NWT Marc by Marc Jacobs Too Hot to Handle Leather Satchel Crossbody Bag BLACK",
+        "description": "NWT Marc by Marc Jacobs Too Hot to Handle Leather Satchel Crossbody Bag BLACK",
         "price": 385,
         "category": 4,
         "rating": 3,
-        "image_url": " https://i.ebayimg.com/images/g/EpMAAOSwL-Bdukos/s-l640.jpg",
-        "image": " MJ satchel 1.jpeg"
+        "image_url": "https://i.ebayimg.com/images/g/EpMAAOSwL-Bdukos/s-l640.jpg",
+        "image": "MJ satchel 1.jpeg"
       }
     },
     {
