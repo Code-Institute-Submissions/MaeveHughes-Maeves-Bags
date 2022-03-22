@@ -17,13 +17,13 @@
                 Handbags
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Crossbodies</a>
-                <a href="" class="dropdown-item">Totes</a>
-                <a href="" class="dropdown-item">Shoulderbags</a>
-                <a href="" class="dropdown-item">Stachel</a>
-                <a href="" class="dropdown-item">Quilted Bags</a>
-                <a href="" class="dropdown-item">Bucket Bags</a>
-                <a href="" class="dropdown-item">Backpacks</a>
+                <a href="{% url 'products' %}?category=crossbodies" class="dropdown-item">Crossbodies</a>
+                <a href="{% url 'products' %}?category=totes" class="dropdown-item">Totes</a>
+                <a href="{% url 'products' %}?category=shoulder_bags" class="dropdown-item">Shoulder bags</a>
+                <a href="{% url 'products' %}?category=satchel" class="dropdown-item">Satchel</a>
+                <a href="{% url 'products' %}?category=quilted_bags" class="dropdown-item">Quilted Bags</a>
+                <a href="{% url 'products' %}?category=bucket_bags" class="dropdown-item">Bucket Bags</a>
+                <a href="{% url 'products' %}?category=backpacks" class="dropdown-item">Backpacks</a>
             </div>
         </li>
 
@@ -32,12 +32,11 @@
                 Brands
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Prada</a>
-                <a href="" class="dropdown-item">Marc Jacobs</a>
-                <a href="" class="dropdown-item">Chanel</a>
-                <a href="" class="dropdown-item">Mulberry</a>
-                <a href="" class="dropdown-item">Gucci</a>
-                <a href="" class="dropdown-item">All Brands</a>
+                <a href="{% url 'products' %}?category=prada" class="dropdown-item">Prada</a>
+                <a href="{% url 'products' %}?category=marc_jacobs"  class="dropdown-item">Marc Jacobs</a>
+                <a href="{% url 'products' %}?category=chanel"  class="dropdown-item">Chanel</a>
+                <a href="{% url 'products' %}?category=mulberry"  class="dropdown-item">Mulberry</a>
+                <a href="{% url 'products' %}?category=gucci"  class="dropdown-item">Gucci</a>
             </div>
         </li>
 
@@ -46,10 +45,9 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
             </div>
         </li>
 
