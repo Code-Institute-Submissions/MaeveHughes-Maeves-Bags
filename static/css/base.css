@@ -66,6 +66,10 @@ body {
     border-radius: 50%;
 }
 
+.checkout {
+    margin-right: 20px;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
