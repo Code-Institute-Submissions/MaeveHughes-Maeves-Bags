@@ -81,6 +81,17 @@ body {
     margin-right: 35px;
 }
 
+.change {
+    margin-right: 50px;
+    padding:10px;
+    border: solid;
+}
+
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
