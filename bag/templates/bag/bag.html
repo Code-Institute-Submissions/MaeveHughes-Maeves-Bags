@@ -13,28 +13,75 @@
     <div class="overlay"></div>
     <div class="container mb-2">
         <div class="row">
-			<div class="box-element">
-				<a class="btn btn-outline-dark checkout" href="{% url 'products' %}">&#x2190; Continue Shopping</a>
-                <a class="btn btn-success checkout" href="#">Checkout</a>
-			</div>
+            <div class="col">
+                <hr>
+                <h2 class="logo-font mb-4"><strong>Shopping Bag</strong></h2>
+            </div>
         </div>
-        <br>
-        <br>
+
         <div class="row">
             <div class="col">
                 {% if bag_items %}
                     <div class="table-responsive rounded">
-                        {{ bag_items }}
-                        <div style="flex:2"></div>
-					    <div style="flex:2"><strong></strong></div>
-					    <div style="flex:1"><strong></strong></div>
-					    <div style="flex:1"><strong></strong></div>
-					    <div style="flex:1"><strong></strong></div>
+                        <table class="table table-sm box-element">
+                            <thead class="text-black">
+                                <tr>
+                                    <th scope="col" style="flex:2"></th>
+                                    <th scope="col" style="flex:2"><strong>Item</strong></th>
+                                    <th scope="col" style="flex:2"><strong>Price</strong></th>
+                                    <th scope="col" style="flex:2"><strong>Quantity</strong></th>
+                                    <th scope="col" style="flex:2"><strong>Total</strong></th>
+                                </tr>
+                            </thead>
+
+                            {% for item in bag_items %}
+                                <tr>
+                                    <td class="p-3 w-25">
+                                        <img class="img-fluid rounded" src="{{ item.product.image.url }}">
+                                    </td>
+                                    <td class="py-3">
+                                        <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                                        <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
+                                    </td>
+                                    <td class="py-3">
+                                        <p class="my-0"><strong>${{ item.product.price }}</strong></p>
+                                    </td>
+                                    <td class="py-3 w-25">
+                                        <p class="my-0"><strong>{{ item.quantity }}</strong></p>
+                                    </td>
+                                    <td class="py-3">
+                                        <p class="my-0"></strong>${{ item.product.price }}</strong></p>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                            <tr>
+                                <td colspan="5" class="pt-5 text-right"><hr>
+                                    <h6 class="text-secondary">Bag Total: ${{ total|floatformat:2 }}</h6>
+                                    <h6 class="text-secondary">Delivery: ${{ delivery|floatformat:2 }}</h6>
+                                    <h4 class="mt-4 text-dark"><strong></strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
+                                    {% if free_delivery_delta > 0 %}
+                                        <p class="mb-1 text-danger">
+                                            Spend <strong>${{ free_delivery_delta }}</strong> more to receive free delivery!
+                                        </p>
+                                    {% endif %}
+                                </td>
+                            </tr>
+
+                        </table>
+
                     </div>
                 {% else %}
                     <p class="lead mb-5">Your bag is empty.</p>
                 {% endif %}
             </div>
         </div>
+        <hr>
+        <div class="row">
+            <div class="box-element">
+                <a class="btn btn-outline-dark checkout" href="{% url 'products' %}">&#x2190; Continue Shopping</a>
+                <a class="btn btn-success checkout" href="#">Checkout</a>
+            </div>
+        </div>
+        <br><br>
     </div>
 {% endblock %}
