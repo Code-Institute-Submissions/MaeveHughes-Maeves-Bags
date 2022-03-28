@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load bag_tools %}
 
 {% block page_header %}
     <div class="container header-container">
@@ -47,7 +48,7 @@
                                         <p class="my-0"><strong>${{ item.product.price }}</strong></p>
                                     </td>
                                     <td class="py-3 w-25">
-                                        <form class="form update-form" method="POST" action="">
+                                        <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
                                             {% csrf_token %}
                                             <div class="form-group w-75 p-3">
                                                 <div class="input-group">
@@ -78,7 +79,7 @@
                                         <a class="remove-item text-danger change" id="remove_{{ item.item_id }}"><strong>Remove</strong></a>
                                     </td>
                                     <td class="py-3">
-                                        <p class="my-0"></strong>${{ item.product.price }}</strong></p>
+                                        <p class="my-0">${{ item.product.price | calc_subtotal:item.quantity }}</p>
                                     </td>
                                 </tr>
                             {% endfor %}
@@ -127,13 +128,18 @@
     })
 
     // Remove item and reload on click
-    $('.remove-item').click(function(e) {
+    $('.remove-item').click(function (e) {
         var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
+        var url = `/bag/remove/${itemId}/`;
+        var data = {
+            'csrfmiddlewaretoken': csrfToken
+        };
+
         $.post(url, data)
-         .done(function() {
-             location.reload();
-         });
-    })
+            .done(function () {
+                location.reload();
+            });
+    });
 </script>
 {% endblock %}
