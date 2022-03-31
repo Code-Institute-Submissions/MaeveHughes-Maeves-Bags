@@ -89,7 +89,7 @@
                                     <h6 class="text-secondary">Delivery: ${{ delivery|floatformat:2 }}</h6>
                                     <h4 class="mt-4 text-dark"><strong></strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
                                     <br>
-                                    <a class="btn btn-success checkout" href="#">Checkout</a>
+                                    <a class="btn btn-success checkout" href="{% url 'checkout' %}">Checkout</a>
                                     {% if free_delivery_delta > 0 %}
                                         <p class="mb-1 text-danger">
                                             Spend <strong>${{ free_delivery_delta }}</strong> more to receive free delivery!
