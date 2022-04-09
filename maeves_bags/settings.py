@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-lxd%3wv8@g=yp6o6-w7c44@u97kl)ll#l6b^52%fw^=u9p5fvg
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['maevesbags.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -117,15 +117,21 @@ LOGIN_REDIRECT_URL = '/'
 WSGI_APPLICATION = 'maeves_bags.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+# Database
+# https://docs.djangoproject.com/en/3.0/ref/settings/#databases
+
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
 
 
 # Password validation
