@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     # Other
     'crispy_forms',
     ]
+SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
