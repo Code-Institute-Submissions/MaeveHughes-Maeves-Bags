@@ -160,9 +160,9 @@ This website has 10 custom built pages and 14 (not all are used) account operati
 
 **Accessible to Admin users**
 
-* Add Product - This is where admin users can add new products to the website.
+* Add Product - This is where admin users can add new products to the website. Admin users have to fill out a form with the following details: name, sku, price, category, rating, description and also have the option to upload an image. If the admin user decides not to use an image it will use the default image. At the end of the form there is two buttons: one to add product and the other to cancel which will bring the user back to the admin page.
 
-* Edit Product - The page for admin users to edit or delete products.
+* Edit Product - The page for admin users to edit or delete products. In order to access this page the admin user will have to open a particular product and select the buttons edit or delete. If the user decides to edit a product they have the option to edit the following details: name, sku, price, category, rating, description and image. If the user clicks on the delete button the product is automatically deleted.
 
 
 #### Pages provided by Django
