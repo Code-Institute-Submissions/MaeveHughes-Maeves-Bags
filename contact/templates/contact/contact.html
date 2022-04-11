@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col">
+
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content%}
+<div class="container">
+    <div class="row">
+        <div class="col text-center text-uppercase">
+         <h2 class="mt-3">Contact</h2>
+         <hr class="w-50 my-4">
+        </div>
+    </div>
+    <div class="row mt-4 mb-4">
+        <div class="col-12 col-md-6 mb-5">
+            <h4 class="mb-4 text-uppercase">Contact us</h4>
+            <p class="font-weight-bold">Phone: 01 120 1212</p>
+            <p class="font-weight-bold">Email: maevesbags@gmail.com</p>
+        </div>
+        <!--Contact form-->
+        <div class="col-12 col-md-6 form-bg p-3">
+            <h4 class="mb-4 text-uppercase">Message us</h4>
+            <form action="{% url 'contact' %}" method="POST" class="form-group">
+                {% csrf_token %}
+                {{ contact_form|crispy }}
+                <a class="btn btn-outline-dark checkout" href="{% url 'products' %}">&#x2190; Continue Shopping</a>
+                <button id="submit-button" class="btn btn-lg btn-purple">
+                    <span class="btn btn-success">Send message</span>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
