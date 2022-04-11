@@ -169,13 +169,13 @@ This website has 10 custom built pages and 14 (not all are used) account operati
 
 These pages are provided by the Allauth package of the Django framework, but are customised by me to fit in with the rest of the site. Read more about Allauth [here](https://django-allauth.readthedocs.io/en/latest/)
 
-* Sign Up - where users can register for an account on the site
+* Sign Up - where users can register for an account on the site.
 
-* Sign in - Registered users can log accessing their personal info etc by signing in
+* Sign in - Registered users can log accessing their personal info etc by signing in.
 
-* Sign Out - The same goes for signing out
+* Sign Out - Registered users can log out of the site.
 
-* Various pages for email verification and password reset, etc
+* Various pages for email verification and password reset, etc.
 
 
 
