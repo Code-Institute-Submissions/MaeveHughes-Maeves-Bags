@@ -1,108 +1,182 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<h1 align="center">Maeve's Bags</h1>
 
-Welcome MaeveHughes,
+View the repository in GitHub [here](https://github.com/MaeveHughes/Maeves-Bags)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+View the live project [here] ()
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+# Project Overview
 
-## Gitpod Reminders
+Maeve's Bags was built as the 5th milestone project as part of Code Institute's Full Stack Software Software Development course. The full stack application uses a Django framework, HTML, CSS, Javascript and Python. 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+Maeve's Bags is an ecommerce web application for customers seeking to purchase bags online. Visitors to the site would be able to browse all products by sorting, searching and by the various bag categories. Visitors can also register for an account to view past orders and contact the company with any queries.
 
-`python3 -m http.server`
+Please note that the website is for educational purposes only. Stripe's credit card payment functionality is active but remains in a "test mode" so that no payments will be taken. Please do not enter any personal credit/debit card numbers whilst using the site. 
 
-A blue button should appear to click: _Make Public_,
+When testing this app, to make a payment, the following details should be used:
 
-Another blue button should appear to click: _Open Browser_.
+* Card number: 4242 4242 4242 4242
+* CVC: any three numbers
+* Date: any future date
+* ZIP Code: any five numbers
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+# Contents
 
-A blue button should appear to click: _Make Public_,
+1. [User Experience (UX)](#user-experience-(ux))
+    - [Strategy](#strategy)
+    - [Scope](#scope)
+    - [Structure](#structure)
+    - [Skeleton](#skeleton)
+    - [Surface](#surface)
+2. [Information Architecture](#information-architecture)
+    - [Database](#database)
+    - [Data Model](#data-model)
+3. [Technologies Used](#technologies-used)
+4. [Testing](#testing)
+5. [Deployment](#deployment)
+    - [Local Deployment](#local-deployment)
+    - [Deployment to Heroku](#deployment-to-heroku)
+    - [Storing Static Files with AWS](#storing-static-files-with-aws)
+    - [Connecting Stripe to Heroku](#connecting-stripe-to-heroku)
+6. [Credits](#credits)
+    - [Code](#code)
+    - [Media](#media)
+    - [Blog Credits](#blog-credits)
+7. [Acknowledgments](#acknowledgments)
 
-Another blue button should appear to click: _Open Browser_.
+# User Experience (UX)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## Strategy
 
-To log into the Heroku toolbelt CLI:
+### User Stories
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+#### Viewing & Navigation
+1. As a first time user, I would like to instinctively know what the website is offering. 
+2. As a first time user, I would like to view a list of bags.
+3. As a first time user, I want to be able to view individual bag details.
+4. As a first time user, I want to be able to easily view the total of my purchases at any time.
+5. As a first time user, I want to be able to contact the business with any queries I may have. 
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+#### Registration & User Accounts
+6. As a site user, I want to be able to easily register for an account.
+7. As a site user, I want to be able to easily login or logout.
+8. As a site user, I want to be able to easily recover my password in case I forget.
+9. As a site user, I want to be able to receive email confirmation after registering. 
+10. As a site user, I want to have a personalised user profile.
 
-------
+#### Sorting & Searching
+11. As a site user, I want to be able to sort the list of available bags.
+12. As a site user, I want to be able to sort a specific category of bag.
+13. As a site user, I want to be able to sort multiple categories of bags simultaneously.
+14. As a site user, I want to be able to search for a product by name or description.
+15. As a site user, I want to be able to easily see what I have searched for and the number of results.
 
-## Release History
+#### Purchasing & Checkout
+16. As a purchasing user, I want to be able to easily select the quantity of a bags when purchasing it / them.
+17. As a purchasing user, I want to be able to view items in my bag to be purchsed.
+18. As a purchasing user, I want to be able to adjust the quantity of individual items in my bag.
+19. As a purchasing user, I want to be able to easily enter my payment information.
+20. As a purchasing user, I want to be able to feel my personal and payment information is safe and secure.
+21. As a purchasing user, I want to be able to view an order confirmation and checkout.
+22. As a purchasing user, I want to receive an email confirmation after checking out.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+#### Admin & Store Management
+23. As a site owner, I want to be able to add, edit and remove products from the site easily. 
+24. As a site owner, I want access to an admin section to view and manage orders. 
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+## Scope
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+The key features of the website were developed based on the user stories.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### For any site user: 
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+- Home page, with striking image of a fashionable person holding a handbag on their arm which quickly helps users to understand the purpose of the site.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+- Products Page, where users can view all the products or products based on filtering criteria. 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+- Product Detail Page, detailing information about the product. From here users can add products to their bags or decide to return to the products page.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+- Shopping Bag page, where users can see what products have been added to their bag and adjust the quantity as needed.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+- Checkout page, allowing users to purchase products. 
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+- Confirmation page, allowing users to see a confirmation of their order.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+- Contact Page, where users can view the contact details for the company and contact the company using the contact form.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+- Sign Up Page, where users can register to become a registered user.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### For registered users: 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+All of the above plus: 
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+- Profile Page, where users can update their default delivery information allowing for ease at checkout. 
 
-------
+- Order History, from the profile page, users can see the previous orders they have made. 
 
-## FAQ about the uptime script
+- Log Out Page, where users can log out of their account. 
 
-**Why have you added this script?**
+### For Site Admin:
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+All of the above plus: 
 
-**How will this affect me?**
+- Site management page, where admin users can add, edit and delete products.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+## Structure
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+This website has 10 custom built pages and 14 (not all are used) account operations Django Allauth pages. The navbar at the top of the screen gives users access to the most important pages at all times.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+#### Pages
 
-**So….?**
+**Accessible to all users**
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+* Header and navigation bar - The brang name is on the top left corner with a link to home page. Visible only on large screens. The navbar consists of the products navigation menu, with sorting or filtering possibilities. My account dropdown list of options for register and login. When registered, the dropdown list contains profile and logout links. There is a search bar for looking after products by name or key words in description. Bag icon with link to your bag list items and the total price of the selected order. The mobile navbar has the same search and cart links, however rather than links to the products, there is a collapsible side nav which is triggered by a burger menu. 
 
-**Can I opt out?**
+* Home - The landing page of the site, with striking image of a fashionable woman holding a handbag on their arm and a informative statement outlining "The new collections are here for Spring | Summer 2022", followed by a shop now button. This is sitting on a marble background image. This gives first time visitors a nice welcome.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+* Products - This is a list of all products when clicking on the shop now button on the home page, clicking on a category in the navbar, or performing a search. There is a sorting option for prices and rating in ascending or descending way. The layout of the products page is similar to that of the Boutique Ado walkthrough project by displaying 4 products in a row on extra large screens, 3 on large screens, 2 on medium and small devices and 1 on extra small screen sizes. Basic product information is displayed below the product image (product name, price and a view product details button). As there may be a large amount of products displayed on a page, I have added a back to top button which appears when the user scrolls to the bottom of the page. I have deliberately put this at the bottom of the page so the focus is not drawn away from the products.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+* Product Detail - When choosing one specific product, a new page opens that contains the chosen product, its details, input quantity option and a button to add it to bag. Admin users are also able to edit and delete products using the icons featured in this section. Products can be added to the bag by clicking the add to bag button. Users can return to an all products view by clicking the "Continue Shopping" button.
 
-**Anything more?**
+* Cart - A user purchases an item by adding it to the cart. The Cart is the users digital shopping cart, containing all products the user has added to it and their details, including the chosen quantity. Each product from the bag contains its name, image, price, quantity selected and the subtotal which is price multiplied by quantity. The user has the option to update each products quantity or remove it. The grand total with delivery included is displayed and two buttons: one to proceed to checkout and one to go back and shop more. If a user does not meet the free delivery threshold a helpful message will be displayed to let them know what they need to spend in order to qualify for free delivery. If the user has no items in the shopping bag, a message is displayed to the user to let them know this and a button to take the user to the all products page is displayed.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+* Checkout - The checkout page features a form for the user to fill in, with name, email, phone number, delivery address. The checkout page contains the payment form from Stripe that takes: card number, CVC, expiry date and ZIP code. The page includes an order summary , as a table with products name, images (images are links that will take the user back to the product details page for that product details)quantity selected, subtotal. Also, the delivery costs, grand total and a button that redirects to bag for adjusting it if needed. From the checkout page, if user is authenticated, they can save their details to their My Profile so they are prefilled for the next order. 
 
----
+* Order Confirmation - The page shows when a payment has successfully been made and an order confirmation will be displayed to the user. The confirmation will also be sent to the given email address during checkout. If the order was successful, the cart will be emptied. In the confirmation, the user can view the items order, the quantity, an order number, grand total and delivery details. At the bottom of the page their is a link back to the products to encourage users to purchse more items.
 
-Happy coding!
+* Sign In - The page gives users the ability to log into the site by using a form. Users have to provide their username and password. There is two buttons at the bottom of the page: One to log in and one back to the home page.
+
+* Sign Up - The page gives users the ability to register by using a form. Users have to provide their email address, email address confirmation, username, password and password confirmation. There is two buttons at the bottom of the page: One to register and one back to the login page.
+
+* Contact - A simple contact form that is sent to the site owner and the page also includes the companys contact details. The form is sent by email to the site owner. Contact messages can be located on the site administration page (for superusers only).
+
+
+**Accessible to signed in users**
+
+* My Profile - Each user can access their own personal profile to view order history and the users billing and shipping details is here. A message to inform the user that this is a past order confirmation is displayed to avoid confusion.
+
+* Sign Out - The page gives users the ability to log out of the site. There is two buttons at the bottom of the page: One to log in and one back to the products page.
+
+* Other accounts operations pages such as Forgot Password.
+
+**Accessible to Admin users**
+
+* Add Product - This is where admin users can add new products to the website.
+
+* Edit Product - The page for admin users to edit or delete products.
+
+
+#### Pages provided by Django
+
+These pages are provided by the Allauth package of the Django framework, but are customised by me to fit in with the rest of the site. Read more about Allauth [here](https://django-allauth.readthedocs.io/en/latest/)
+
+* Sign Up - where users can register for an account on the site
+
+* Sign in - Registered users can log accessing their personal info etc by signing in
+
+* Sign Out - The same goes for signing out
+
+* Various pages for email verification and password reset, etc
+
+
+
+
