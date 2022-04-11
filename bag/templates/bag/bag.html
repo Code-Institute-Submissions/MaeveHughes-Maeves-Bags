@@ -64,10 +64,10 @@
                                                             </span>
                                                         </button>
                                                     </div>
-                                                    <input class="form-control qty_input" type="number" 
-                                                    name="quantity" value="{{ item.quantity }}" min="1" max="99" 
-                                                    data-item_id="{{ product.id }}" 
-                                                    id="id_qty_{{ product.id }}">
+                                                    <input class="form-control form-control-sm qty_input id_qty_{{ item.item_id }} 
+                                                    {% if item.size %}size_{{ item.item_id }}_{{ item.size }}{% endif %}" type="number"
+                                                    name="quantity" value="{{ item.quantity }}" min="1" max="99"
+                                                    data-item_id="{{ item.item_id }}">
                                                     <div class="input-group-append">
                                                         <button class="increment-qty btn rounded-0 border-secondary"
                                                             data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
@@ -79,14 +79,15 @@
                                                 </div>
                                             </div>
                                         </form>
-                                        <a class="update-link text-info change"><strong>Update</strong></a> 
-                                        <a class="remove-item text-danger change" id="remove_{{ item.item_id }}"><strong>Remove</strong></a>
                                     </td>
                                     <td class="py-3">
                                         <p class="my-0">${{ item.product.price | calc_subtotal:item.quantity }}</p>
+                                        <a class="update-link text-info"><small>Update</small></a>
+                                        <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}"><small>Remove</small></a>
+              
                                     </td>
                                 </tr>
-                            {% endfor %}
+                            {% endfor %}      
                             <tr>
                                 <td colspan="5" class="pt-5 text-right"><hr>
                                     <h6 class="text-secondary">Bag Total: ${{ total|floatformat:2 }}</h6>
@@ -103,7 +104,6 @@
                             </tr>
 
                         </table>
-
                     </div>
                 {% else %}
                     <p class="lead mb-5">Your bag is empty.</p>

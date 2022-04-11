@@ -1,11 +1,10 @@
-
 <li class="list-inline-item dropdown">
-    <a class="text-black nav-link d-block d-lg-none" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <a class="text-black nav-link d-block d-lg-none" href="{% url 'home' %}"></a>
         <div class="text-center">
-            <div><i class="fas fa-user fa-lg"></i></div>
-            <p class="my-0">My Account</p>
+            <p class="logo-font text-black my-0 h4"><strong>Maeve's Bags</strong></p>
         </div>
     </a>
+    <br>
     <div class="dropdown-menu border-0" aria-labelledby="user-options">
         {% if request.user.is_authenticated %}
             {% if request.user.is_superuser %}
@@ -33,3 +32,4 @@
         </div>
     </a>
 </li>
+
