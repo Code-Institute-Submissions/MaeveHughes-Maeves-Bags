@@ -184,5 +184,39 @@ These pages are provided by the Allauth package of the Django framework, but are
 * Additional payment options such as Apple Pay or Paypal for ease of purchasing.
 
 
+## Skeleton
+
+Below you can find the links for my wireframes, showing how I would like the pages to be structured, and how the site will appear on different device sizes. 
+
+The wireframes have been created using moqups and show for Desktop, iPad and iPhone. 
+
+- Home Page
+    - [Desktop](documentation/wireframes/HomePageDesktopWireframe.png)
+    - [iPad](documentation/wireframes/HomePageIPadWireframe.png)
+    - [iPhone](documentation/wireframes/HomePageIPhoneWireframe.png)
+- All Products Page
+    - [Desktop](documentation/wireframes/ProductsDesktopWireframe.png)
+    - [iPad](documentation/wireframes/)
+    - [iPhone](documentation/wireframes/)
+- View Product Page
+    - [Desktop](documentation/wireframes/ProductDetailsDesktopWireframe.png)
+    - [iPad](documentation/wireframes/)
+    - [iPhone](documentation/wireframes/)
+- Basket Page
+    - [Desktop](documentation/wireframes/BagDesktopWireframe.png)
+    - [iPad](documentation/wireframes/)
+    - [iPhone](documentation/wireframes/)
+- Checkout Page
+    - [Desktop](documentation/wireframes/CheckoutDesktopWireframe.png)
+    - [iPad](documentation/wireframes/)
+    - [iPhone](documentation/wireframes/)
+- Confirmation Page
+    - [Desktop](documentation/wireframes/OrderSummaryDesktopWireframe.png)
+    - [iPad](documentation/wireframes/)
+    - [iPhone](documentation/wireframes/)
+- Contact Us Page
+    - [Desktop](documentation/wireframes/ContactDesktopWireframe.png)
+    - [iPad](documentation/wireframes/)
+    - [iPhone](documentation/wireframes/)
 
 
