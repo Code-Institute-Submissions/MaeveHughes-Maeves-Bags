@@ -137,7 +137,7 @@ This website has 10 custom built pages and 14 (not all are used) account operati
 
 * Product Detail - When choosing one specific product, a new page opens that contains the chosen product, its details, input quantity option and a button to add it to bag. Admin users are also able to edit and delete products using the icons featured in this section. Products can be added to the bag by clicking the add to bag button. Users can return to an all products view by clicking the "Continue Shopping" button.
 
-* Cart - A user purchases an item by adding it to the cart. The Cart is the users digital shopping cart, containing all products the user has added to it and their details, including the chosen quantity. Each product from the bag contains its name, image, price, quantity selected and the subtotal which is price multiplied by quantity. The user has the option to update each products quantity or remove it. The grand total with delivery included is displayed and two buttons: one to proceed to checkout and one to go back and shop more. If a user does not meet the free delivery threshold a helpful message will be displayed to let them know what they need to spend in order to qualify for free delivery. If the user has no items in the shopping bag, a message is displayed to the user to let them know this and a button to take the user to the all products page is displayed.
+* Cart - A user purchases an item by adding it to the cart. The Cart is the users digital shopping cart, containing all products the user has added to it and their details, including the chosen quantity. Each product from the bag contains its name, image, price, quantity selected and the subtotal which is price multiplied by quantity. The user has the option to update each products quantity or remove it (this is only currently available on desktop view). The grand total with delivery included is displayed and two buttons: one to proceed to checkout and one to go back and shop more. If a user does not meet the free delivery threshold a helpful message will be displayed to let them know what they need to spend in order to qualify for free delivery. If the user has no items in the shopping bag, a message is displayed to the user to let them know this and a button to take the user to the all products page is displayed.
 
 * Checkout - The checkout page features a form for the user to fill in, with name, email, phone number, delivery address. The checkout page contains the payment form from Stripe that takes: card number, CVC, expiry date and ZIP code. The page includes an order summary , as a table with products name, images (images are links that will take the user back to the product details page for that product details)quantity selected, subtotal. Also, the delivery costs, grand total and a button that redirects to bag for adjusting it if needed. From the checkout page, if user is authenticated, they can save their details to their My Profile so they are prefilled for the next order. 
 
@@ -176,6 +176,12 @@ These pages are provided by the Allauth package of the Django framework, but are
 * Sign Out - Registered users can log out of the site.
 
 * Various pages for email verification and password reset, etc.
+
+
+#### Features left to implement
+* An option for users to leave a review /rating on each product.
+* A welcome or discount offer for new customers, such as 20% off their first order, to encourage more registrations.
+* Additional payment options such as Apple Pay or Paypal for ease of purchasing.
 
 
 
