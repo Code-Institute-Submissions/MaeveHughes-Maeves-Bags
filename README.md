@@ -1,8 +1,14 @@
 <h1 align="center">Maeve's Bags</h1>
 
+![DBDiagram](documentation/HomeReadMe.png)
+
 View the repository in GitHub [here](https://github.com/MaeveHughes/Maeves-Bags)
 
 View the live project [here] ()
+
+Responsive Design for Ipad and Iphone:
+    - [IPad](documentation/IpadHomePage.png)
+    - [IPhone](documentation/IPhoneHomePage.png)
 
 # Project Overview
 
@@ -82,6 +88,10 @@ When testing this app, to make a payment, the following details should be used:
 #### Admin & Store Management
 23. As a site owner, I want to be able to add, edit and remove products from the site easily. 
 24. As a site owner, I want access to an admin section to view and manage orders. 
+
+The User Stories were tracked and managed using an excel workbook, similiar to the process on the Code Institutes Boutique Ado project:
+
+![DBDiagram](documentation/UserStories.png)
 
 ## Scope
 
@@ -239,4 +249,238 @@ The wireframes have been created using moqups and show for Desktop, iPad and iPh
 
 - I've made use of icons in various sections on the site. They have been used for navigation: cart, social media links, product tags, search bar and checkout. All icons have been obtained from FontAwesome. 
 
+## Information Architechture:
 
+### Database Choice:
+
+- SQLight was used in development, as it comes pre-installed with Django.
+- PostgreSQL was used for the deployed site, as it is offered as an optional add-on by Heroku.
+
+### Data Modeling:
+
+- The image below was produced using the [dbdiagram.io](https://dbdiagram.io/)
+
+![DBDiagram](documentation/DatabaseModeling.png)
+
+### Checkout App
+
+- Order Model
+    - Contains details of the user's orders, their delivery details, and the items they've ordered. It is linked to the UserProfile Model by the 'user_profile' field
+
+- OrderLineItem Model
+    - Contains details for the customer order, quantity and product total. It is linked to the Order Model by the 'order' field and the Product Model by the 'product field'.
+    
+### Products App
+
+- Category
+    - Contains Product Categories options for products. It is linked to the Product Model using a foreign key.
+
+- Product
+    - Contains detailed product information for each product. 
+ 
+### Contact App
+
+- Contact
+    - Contains the details of users and their queries from the contact form. 
+
+### Profiles App
+
+- UserProfile
+    - Contains the user's details for future orders. 
+
+### Fixtures
+
+Fixtures were created for the following:
+- Category
+- Product
+
+# Technologies Used
+
+## Languages Used
+
+- HTML5
+- CSS3
+- Javascript
+- Python
+
+### Frameworks, Libraries and Other Sources Used:
+
+- [Django](https://www.djangoproject.com/) was used as the principal framework for the project.
+- [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) was used for all forms on the site.
+- [Django Allauth](https://django-allauth.readthedocs.io/en/latest/) was used for user authentication on the site.
+- [Stripe](https://stripe.com/) was used to handle payments on the site.
+- [Bootstrap4](https://getbootstrap.com/) was used to aid reponsive design.
+- [Amazon Web Services](https://aws.amazon.com/) S3 was used to store all static CSS and Javascript files, and images.
+- [SQLite3](https://www.sqlite.org/index.html) is the database that was used in production.
+- [PostgreSQL](https://www.postgresql.org/) is the database used by the deployed site.
+- [Heroku](https://www.heroku.com/) hosts the Milestone Project 04 website.
+- [JQuery](https://jquery.com/) was used extensively throughout the site, in order to provide functionality for Bootstrap elements, and for Stripe. 
+- [GitPod](https://gitpod.io/) was used as an IDE for this project. 
+- [GitHub](https://github.com/) is where the Milestone Project 04's repository is stored. Regular commits were made throughout, and code was pushed to GitHub from GitPod.
+- [Font Awesome](https://fontawesome.com/) was used for icons on the site.
+
+# Testing
+
+ - There are dead links on the footer on Social media Icons (Facebook, Instagram and Twitter).
+ - There are no errors and warnings in the Developer console
+ - Tested using lighthouse and it passes the result
+ - The page is fully responsive and has been tested using the Developer console.
+ - Tested about, bag, check out, contact, home, review and products pages in all devices. All working fine.
+ - There is no error in python codes as it passes through Pep8 online check.
+ - There is no error in javascript codes as it passes through JsHint.
+ - There is no error in CSS and HTML as it passes through W3C validators.
+ - All the codes were formatted using git pod buit-in document formatter.
+ - Tested every functionality like Stripe, add/edit/delete products, email, contact, check out, and confirmation email. All working fine.
+ - Tested modal functionalities and it works fine.
+
+# Deployment
+
+### Heroku deployment with AWS:
+
+- The Maeve's Bags website was deployed to [Heroku](https://www.heroku.com/) using the following steps:
+
+1. Install gunicorn, psycopg2-binary and dj-database-url using the ```PIP Install``` command.
+2. Freeze all the requirements for the project into a requirements.txt file using the ```pip3 freeze > requirements.txt``` command.
+3. Create a procfile, with the following inside it: ```web: gunicorn maevesbags.wsgi:application```.
+4. Push these changes to GitHub, using ```git add .```, ```git commit -m``` and ```git push``` commands.
+5. Navigate to [Heroku](https://www.heroku.com/), and login or create an account.
+6. Once logged in, click on 'resources'.
+7. From the add-ons search bar, add the Heroku Postgres DB, select the free account, and then submit order form to add it to the project.
+8. From the app's dashboard, click on 'settings', and then 'reveal config vars' in order to set the necessary configuration variables for the project. 
+It should look like this: 
+
+| Key                   | Value                      |
+|-----------------------|----------------------------|
+| AWS_ACCESS_KEY_ID     | Your AWS Access Key        |
+| AWS_SECRET_ACCESS_KEY | Your AWS Secret Access Key |
+| DATABASE_URL          | Your Database URL          |
+| EMAIL_HOST_PASS       | Your Email Password        |
+| EMAIL_HOST_USER       | Your Email Address         |
+| SECRET_KEY            | Your Secret Key            |
+| STRIPE_PUBLIC_KEY     | Your Stripe Public Key     |
+| STRIPE_SECRET_KEY     | Your Stripe Secret Key     |
+| STRIPE_WH_SECRET      | Your Stripe WH Key         |
+| USE_AWS               | TRUE                       |
+
+9. Back on the main dashboard, click on 'deploy', and then under the 'Deployment' method section, select GitHub and 'Automatic Deploys'.
+10. Ensure that in settings.py, the following code is commented out:
+```
+Database
+ https://docs.djangoproject.com/en/3.1/ref/settings/#databases
+```
+and the at the following code is added:
+```
+DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+```
+11. Make migrations using the following command:
+```
+python3 manage.py makemigrations
+```
+and migrate the database models to the Postgres database using the following command:
+```
+python3 manage.py migrate
+```
+12. Load the fixtures from the 'product_types.json' file and then from the 'products.json' file - which are contained in the 'fixtures' folder into the database. 
+This is done by using the following command:
+```
+python3 manage.py loaddata <file name>
+```
+13. Create a new superuser with the following command:
+```
+python3 manage.py createsuperuser
+```
+and then enter chosen email, username and password.
+14. In settings.py, contain the previously entered database setting in an if statement, and add an else condition, so that different databases are 
+used depending on the environment.
+```
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
+```
+15. Disable 'COLLECTSTATIC' with the fillowing code: ``` heroku config:set DISABLE_COLLECTSTATIC=1 ``` 
+so that Heroku doesn't attempt to collect the static files.
+16. Add ```ALLOWED_HOSTS = ['milestone-project-04.herokuapp.com', 'localhost']``` to settings.py.
+17. Add Stripe environment variables to settings.py.
+18. Push to Heroku using the following command:
+```git push heroku main```
+
+### Amazon Web Services:
+
+All Static and media files for the deployed version of the site are hosted in a Amazon Web Services(AWS) S3 bucket. 
+In order to create your own bucket, please follow the instructions on the AWS website 
+[Here](https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-bucket.html)
+
+1. In the gitpod terminal, install boto3 and django-storages using the following commands:
+```pip3 install boto3 ``` and ```pip3 install django-storages```
+2. Freeze the new requirements into the 'requirements.txt' file using the ```pip3 freeze > requirements.txt``` command
+3. Add 'storages' to INSTALLED_APPS in settings.py.
+4. Add the following code to settings.py in order to link the AWS bucket to the website:
+```
+if 'USE_AWS' in os.environ:
+    # Cache control
+    AWS_S3_OBJECT_PARAMETERS = {
+        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+        'CacheControl': 'max-age=94608000',
+    }
+
+    # Bucket Config
+    AWS_STORAGE_BUCKET_NAME = 'milestone-project-04'
+    AWS_S3_REGION_NAME = 'eu-west-1'
+    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+
+    # Static and media files
+    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    STATICFILES_LOCATION = 'static'
+    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+    MEDIAFILES_LOCATION = 'media'
+
+    # Override static and media URLs in production
+    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+```
+5. Create a custom_storages.py file in the root level of the project. Inside it, include the locations of the Static Storage and Media Storage.
+6. Delete DISABLE_COLLECTSTATIC from the Heroku Config Variables.
+7. Finally, push to GitHub, and all changes should be automatically pushed to Heroku too.
+
+## Credits:
+
+### Code:
+
+- **Code Institute Boutique Ado Project**: Code institutes Boutique Ado app provided the building blocks for the project and was used as a primary resource.
+
+- **Code Institute Slack Channels**: Slack was used extensively for debugging, and to look for ideas off other students and CI staff members.
+
+-**W3 Schools**: W3 Schools was referenced for debugging purposes.
+
+### Images: 
+
+- All product images and descriptions are the property of Zalando, Brown Thomas, Prada, Farfetch, Mulberry, Marc Jacobs, Gucci and Chanel websites.
+
+- The background image on the site is from [postermywall](https://www.postermywall.com/)
+
+- The homepage image, is from [lofficiel](https://www.lofficiel.at/)
+
+- All images and content sourced for the website are for educational purposes only. 
+
+
+### Content:
+
+- All content on the site was either taken from the Boutique Ado project, Zalando, Brown Thomas, Prada, Farfetch, Mulberry, Marc Jacobs, Gucci and Chanel websites or written by the developer.
+
+## Acknowledgements:
+
+- **My Mentor** Thanks to my mentor Gerard Mcbride for his time and support. 
+- **My Friends and Family** for constant support, and feedback on the content and functionality.
+- **Code Institute Tutor Support** Code Institute's tutor team for support in aiding with minor bug fixes. 
