@@ -91,6 +91,13 @@ body {
     border: solid;
 }
 
+/* Hiding image on smaller screens and adding padding to the home page text */
+@media (max-width:629px) {
+    .change {
+        display: none; 
+    }
+  }
+
 .update-link,
 .remove-item {
     cursor: pointer;
