@@ -93,8 +93,9 @@ body {
 
 /* Hiding image on smaller screens and adding padding to the home page text */
 @media (max-width:629px) {
-    .change {
+    .quantity-mobile {
         display: none; 
+        border: none;
     }
   }
 

@@ -30,7 +30,7 @@
                                     <th scope="col" style="flex:2"></th>
                                     <th scope="col" style="flex:2"><strong>Item</strong></th>
                                     <th scope="col" style="flex:2"><strong>Price</strong></th>
-                                    <th scope="col" style="flex:2" class="change"><strong>Quantity</strong></th>
+                                    <th scope="col" style="flex:2" class="quantity-mobile"><strong>Quantity</strong></th>
                                     <th scope="col" style="flex:2"><strong>Total</strong></th>
                                 </tr>
                             </thead>
@@ -51,28 +51,28 @@
                                     <td class="py-3">
                                         <p class="my-0"><strong>${{ item.product.price }}</strong></p>
                                     </td>
-                                    <td class="py-3 w-25">
+                                    <td class="py-3 w-25 quantity-mobile">
                                         <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
                                             {% csrf_token %}
                                             <div class="form-group w-75 p-3">
                                                 <div class="input-group">
                                                     <div class="input-group-prepend">
-                                                        <button class="decrement-qty btn rounded-0 border-secondary change">
+                                                        <button class="decrement-qty btn rounded-0 border-secondary"
                                                             data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
                                                             <span class="icon">
-                                                                <img class="chg-quantity change"> src="{% static 'images/down.png' %}">
+                                                                <img class="chg-quantity" src="{% static  'images/down.png' %}">
                                                             </span>
                                                         </button>
                                                     </div>
-                                                    <input class="form-control qty_input change" type="number" 
+                                                    <input class="form-control qty_input" type="number" 
                                                     name="quantity" value="{{ item.quantity }}" min="1" max="99" 
                                                     data-item_id="{{ product.id }}" 
                                                     id="id_qty_{{ product.id }}">
                                                     <div class="input-group-append">
-                                                        <button class="increment-qty btn rounded-0 border-secondary change"
+                                                        <button class="increment-qty btn rounded-0 border-secondary"
                                                             data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
                                                             <span class="icon">
-                                                                <img src="{% static 'images/up.png' %}" class="chg-quantity change">
+                                                                <img src="{% static 'images/up.png' %}" class="chg-quantity">
                                                             </span>
                                                         </button>
                                                     </div>
