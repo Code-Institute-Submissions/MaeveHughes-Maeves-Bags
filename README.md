@@ -196,27 +196,27 @@ The wireframes have been created using moqups and show for Desktop, iPad and iPh
     - [iPhone](documentation/wireframes/HomePageIPhoneWireframe.png)
 - All Products Page
     - [Desktop](documentation/wireframes/ProductsDesktopWireframe.png)
-    - [iPad](documentation/wireframes/)
-    - [iPhone](documentation/wireframes/)
+    - [iPad](documentation/wireframes/ProductsIPadWireframe.png)
+    - [iPhone](documentation/wireframes/ProductsIPhoneWireframe.png)
 - View Product Page
     - [Desktop](documentation/wireframes/ProductDetailsDesktopWireframe.png)
-    - [iPad](documentation/wireframes/)
-    - [iPhone](documentation/wireframes/)
-- Basket Page
+    - [iPad](documentation/wireframes/ProductDetailsIPadWireframe.png)
+    - [iPhone](documentation/wireframes/ProductDetailsIPhoneWireframe.png)
+- Bag Page
     - [Desktop](documentation/wireframes/BagDesktopWireframe.png)
-    - [iPad](documentation/wireframes/)
-    - [iPhone](documentation/wireframes/)
+    - [iPad](documentation/wireframes/BagIPadWireframe.png)
+    - [iPhone](documentation/wireframes/BagIPhoneWireframe.png)
 - Checkout Page
     - [Desktop](documentation/wireframes/CheckoutDesktopWireframe.png)
-    - [iPad](documentation/wireframes/)
-    - [iPhone](documentation/wireframes/)
+    - [iPad](documentation/wireframes/CheckoutIPadWireframe.png)
+    - [iPhone](documentation/wireframes/CheckoutIPhoneWireframe.png)
 - Confirmation Page
-    - [Desktop](documentation/wireframes/OrderSummaryDesktopWireframe.png)
-    - [iPad](documentation/wireframes/)
-    - [iPhone](documentation/wireframes/)
+    - [Desktop](documentation/wireframes/ConfirmationDesktopWireframe.png)
+    - [iPad](documentation/wireframes/ConfirmationIpadWireframe.png)
+    - [iPhone](documentation/wireframes/ConfirmationIPhoneWireframe.png)
 - Contact Us Page
     - [Desktop](documentation/wireframes/ContactDesktopWireframe.png)
-    - [iPad](documentation/wireframes/)
-    - [iPhone](documentation/wireframes/)
+    - [iPad](documentation/wireframes/ContactIPadWireframe.png)
+    - [iPhone](documentation/wireframes/ContactIPhoneWireframe.png)
 
 
