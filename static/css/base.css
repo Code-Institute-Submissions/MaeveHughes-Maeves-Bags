@@ -91,6 +91,20 @@ body {
     border: solid;
 }
 
+
+.list .menu {
+    display: block;
+    font-size: 28px;
+    font-family: roboto, sans-serif;
+    padding: 0 20px;
+    color: black;
+}
+
+.list {
+    list-style: none;
+    display: inline-block;
+}
+
 /* Hiding image on smaller screens and adding padding to the home page text */
 @media (max-width:629px) {
     .quantity-mobile {
