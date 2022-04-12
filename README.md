@@ -219,4 +219,24 @@ The wireframes have been created using moqups and show for Desktop, iPad and iPh
     - [iPad](documentation/wireframes/ContactIPadWireframe.png)
     - [iPhone](documentation/wireframes/ContactIPhoneWireframe.png)
 
+## Surface
+
+### Design
+
+#### Colour Scheme
+
+- I wanted to create a basic colour scheme for this site so the products would stand out to the users. I picked a marble image from postermywall to be the background image on all the pages on the site. This is a modern and on trend look for the site and does not take away from the products which was the main objective. The marble background is off white and a light shade of black. I wanted to keep this colour scheme throughout the site. The font throught the site is mainly black. I was concerned that black and white can be quite bland, so wanted to ensure the site was catching to the eye at the same time so added pop of green and white for some of the buttons on the site. The colours were taken from bootstrap.
+
+#### Typography
+- I have used Lato throughtout the site. This font was stratgeically chosen as it is elligible in lowercase and uppercase. As the colouring on the site is quite simple, I wanted the font to reflect the same.
+
+#### Imagery
+- Due to the nature of the products I have had to rely on other retailer's products and modify them for use on my site. For the most part product images have come from [Zalando](https://www.zalando.ie/) and other online retailers (credited in the credits section).
+
+- I have used an image of a stylish woman holding a handbag on the home page. The tones of colour on the image (cream, black gold and brown) compliment the colour scheme of the site. Image credits can be found in the credit section of the README.
+
+#### Icons
+
+- I've made use of icons in various sections on the site. They have been used for navigation: cart, social media links, product tags, search bar and checkout. All icons have been obtained from FontAwesome. 
+
 
