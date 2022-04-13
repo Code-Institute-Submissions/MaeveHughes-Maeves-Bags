@@ -1,9 +1,19 @@
+"""
+profiles/forms.py: user profile form.
+Credit to Code Institute's Boutique Ado project.
+"""
+
+# - - - - - Django Imports - - - - - - - - -
 from django import forms
+
+# - - - - - Internal Imports - - - - - - - - -
 from .models import UserProfile
 
 
 class UserProfileForm(forms.ModelForm):
+    """Class for all User Profiles"""
     class Meta:
+        """Update Class Meta Data"""
         model = UserProfile
         exclude = ('user',)
 
@@ -30,5 +40,9 @@ class UserProfileForm(forms.ModelForm):
                 else:
                     placeholder = placeholders[field]
                 self.fields[field].widget.attrs['placeholder'] = placeholder
-            self.fields[field].widget.attrs['class'] = 'border-black rounded-0 profile-form-input'
+            self.fields[field].widget.attrs['class'] = (
+                'border-black'
+                'rounded-0'
+                'profile-form-input'
+            )
             self.fields[field].label = False
