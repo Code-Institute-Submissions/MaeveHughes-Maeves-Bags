@@ -1,9 +1,27 @@
+"""
+cart/contexts.py: enables the cart contents to be accessed throughout the site.
+Credit to Code Institute's Boutique Ado project.
+"""
+
+# - - - - - Python Imports - - - - - - - - -
 from decimal import Decimal
+
+# - - - - - Django Imports - - - - - - - - -
 from django.conf import settings
 from django.shortcuts import get_object_or_404
+
+# - - - - - Internal Imports - - - - - - - - -
 from products.models import Product
 
+
 def bag_contents(request):
+    """
+    Accesses the cart contents.
+    Args:
+        request (object)
+    Returns:
+        the cart contents as its context.
+    """
 
     bag_items = []
     total = 0
@@ -26,9 +44,9 @@ def bag_contents(request):
     else:
         delivery = 0
         free_delivery_delta = 0
-    
+
     grand_total = delivery + total
-    
+
     context = {
         'bag_items': bag_items,
         'total': total,

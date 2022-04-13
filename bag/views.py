@@ -1,10 +1,16 @@
+"""
+cart/views.py: views to display the shopping cart page and add/update/remove
+functionality for it. Most of the code is derived from the Code Institute
+Boutique Ado project.
+"""
+
+# - - - - - Django Imports - - - - - - - - -
 from django.shortcuts import (render, redirect, reverse,
                               HttpResponse, get_object_or_404)
 from django.contrib import messages
 
+# - - - - - Internal imports - - - - - - - - -
 from products.models import Product
-
-# Create your views here.
 
 
 def view_bag(request):
@@ -23,7 +29,11 @@ def add_to_bag(request, item_id):
 
     if item_id in list(bag.keys()):
         bag[item_id] += quantity
-        messages.success(request, f'Updated {product.name} quantity to {bag[item_id]}')
+        messages.success(
+            request, (
+                f'Updated {product.name} quantity to {bag[item_id]}'
+            )
+        )
     else:
         bag[item_id] = quantity
         messages.success(request, f'Added {product.name} to your bag')
@@ -71,6 +81,6 @@ def remove_from_bag(request, item_id):
 
         return HttpResponse(status=200)
 
-    except Exception as e:
+    except Exception as e:  # pylint: disable=broad-except, invalid-name
         messages.error(request, f"Error removing item: {e}")
         return HttpResponse(status=500)
