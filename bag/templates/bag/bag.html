@@ -60,7 +60,7 @@
                                                         <button class="decrement-qty btn rounded-0 border-secondary"
                                                             data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
                                                             <span class="icon">
-                                                                <img class="chg-quantity" src="{% static  'images/down.png' %}">
+                                                                <img class="chg-quantity" src="{% static  'images/down.png' %}" alt="downarrow">
                                                             </span>
                                                         </button>
                                                     </div>
@@ -72,7 +72,7 @@
                                                         <button class="increment-qty btn rounded-0 border-secondary"
                                                             data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
                                                             <span class="icon">
-                                                                <img src="{% static 'images/up.png' %}" class="chg-quantity">
+                                                                <img src="{% static 'images/up.png' %}" class="chg-quantity" alt="uparrow">
                                                             </span>
                                                         </button>
                                                     </div>
@@ -91,7 +91,7 @@
                                 <td colspan="5" class="pt-5 text-right"><hr>
                                     <h6 class="text-secondary">Bag Total: ${{ total|floatformat:2 }}</h6>
                                     <h6 class="text-secondary">Delivery: ${{ delivery|floatformat:2 }}</h6>
-                                    <h4 class="mt-4 text-dark"><strong></strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
+                                    <h4 class="mt-4 text-dark"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
                                     <br>
                                     <a class="btn btn-success checkout" href="{% url 'checkout' %}">Checkout</a>
                                     {% if free_delivery_delta > 0 %}
