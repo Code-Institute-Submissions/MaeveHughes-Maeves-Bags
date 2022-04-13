@@ -1,11 +1,20 @@
+"""
+checkout/webhooks.py: Contains webhook listener for stripe payment
+Credit: Code Institute, Boutique Ado project, Stripe
+"""
+# - - - - - Django Imports - - - - - - - - -
 from django.conf import settings
 from django.http import HttpResponse
 from django.views.decorators.http import require_POST
 from django.views.decorators.csrf import csrf_exempt
 
-from checkout.webhook_handler import StripeWH_Handler
-
+# - - - - - 3rd party Imports - - - - - - - - -
 import stripe
+
+# - - - - - Internal Imports - - - - - - - - -
+from checkout.webhook_handler import StripeWH_Handler
+# pylint: disable=invalid-name, broad-except
+
 
 @require_POST
 @csrf_exempt
@@ -22,24 +31,24 @@ def webhook(request):
 
     try:
         event = stripe.Webhook.construct_event(
-        payload, sig_header, wh_secret
+            payload, sig_header, wh_secret
         )
     except ValueError as e:
         # Invalid payload
-        return HttpResponse(status=400)
+        return HttpResponse(content=e, status=400)
     except stripe.error.SignatureVerificationError as e:
         # Invalid signature
-        return HttpResponse(status=400)
+        return HttpResponse(content=e, status=400)
     except Exception as e:
         return HttpResponse(content=e, status=400)
 
-    # Set up a webhook handler
-    handler = StripeWH_Handler(request)
+    # Set up a webhook handler as h to conform with line length rules
+    h = StripeWH_Handler(request)
 
     # Map webhook events to relevant handler functions
     event_map = {
-        'payment_intent.succeeded': handler.handle_payment_intent_succeeded,
-        'payment_intent.payment_failed': handler.handle_payment_intent_payment_failed,
+        'payment_intent.succeeded': h.handle_payment_intent_succeeded,
+        'payment_intent.payment_failed': h.handle_payment_intent_payment_failed
     }
 
     # Get the webhook type from Stripe
@@ -47,7 +56,7 @@ def webhook(request):
 
     # If there's a handler for it, get it from the event map
     # Use the generic one by default
-    event_handler = event_map.get(event_type, handler.handle_event)
+    event_handler = event_map.get(event_type, h.handle_event)
 
     # Call the event handler with the event
     response = event_handler(event)
