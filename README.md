@@ -321,7 +321,7 @@ Fixtures were created for the following:
 
 # Testing
 
- - There are dead links on the footer on Social media Icons (Facebook, Instagram and Twitter).
+ - There is a link on the contact page to the Facebook business page and there is also dead links to Instagram, Youtube and Twitter, all styled using their icons. [Screenshot of the facebook page](documentation/facebook.png)
  - There are no errors and warnings in the Developer console
  - Tested using lighthouse and it passes the result
  - The page is fully responsive and has been tested using the Developer console.
