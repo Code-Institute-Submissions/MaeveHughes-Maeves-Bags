@@ -1,13 +1,28 @@
+"""
+checkout/admin.py: admin models for the checkout app.
+Credit to Code Institute's Boutique Ado project.
+"""
+
+# - - - - - Django Imports - - - - - - - - -
 from django.contrib import admin
+
+# - - - - - Internal Imports - - - - - - - - -
 from .models import Order, OrderLineItem
 
 
 class OrderLineItemAdminInline(admin.TabularInline):
+    """
+    Makes sure the items instances are displayed as line items
+    in the Django admin
+    """
     model = OrderLineItem
     readonly_fields = ('lineitem_total',)
 
 
 class OrderAdmin(admin.ModelAdmin):
+    """
+    Permits order operations in Django admin
+    """
     inlines = (OrderLineItemAdminInline,)
 
     readonly_fields = ('order_number', 'date',
@@ -27,5 +42,6 @@ class OrderAdmin(admin.ModelAdmin):
                     'grand_total',)
 
     ordering = ('-date',)
+
 
 admin.site.register(Order, OrderAdmin)
