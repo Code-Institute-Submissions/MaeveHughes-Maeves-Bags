@@ -1,6 +1,9 @@
-from django.shortcuts import render
+"""
+home/views.py: Views for home app, rendering the landing page of the site.
+"""
 
-# Create your views here.
+# - - - - - Django Imports - - - - - - - - -
+from django.shortcuts import render
 
 
 def index(request):
