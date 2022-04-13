@@ -331,7 +331,6 @@ Fixtures were created for the following:
  - There is no error in CSS and HTML as it passes through W3C validators.
  - All the codes were formatted using git pod buit-in document formatter.
  - Tested every functionality like Stripe, add/edit/delete products, email, contact, check out, and confirmation email. All working fine.
- - Tested modal functionalities and it works fine.
 
 # Deployment
 
