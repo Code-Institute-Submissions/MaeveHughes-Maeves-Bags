@@ -47,6 +47,7 @@
         <!--Contact form-->
         <div class="col-12 col-md-6 form-bg p-3">
             <h4 class="mb-4 text-uppercase">Message us</h4>
+            <p><strong>Please leave a message if you would like to subscribe to our newsletter!</strong></p>
             <form action="{% url 'contact' %}" method="POST" class="form-group">
                 {% csrf_token %}
                 {{ contact_form|crispy }}
