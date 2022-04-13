@@ -14,4 +14,4 @@ class CheckoutConfig(AppConfig):
 
     def ready(self):
         # pylint: disable=unused-import, import-outside-toplevel
-        import checkout.signals # noqa
+        import checkout.signals   # noqa
