@@ -4,7 +4,7 @@
 
 View the repository in GitHub [here](https://github.com/MaeveHughes/Maeves-Bags)
 
-View the live project [here] ()
+View the live project [here] (https://maevesbags.herokuapp.com/)
 
 Responsive Design for Ipad and Iphone:
     - [IPad](documentation/IpadHomePage.png)
