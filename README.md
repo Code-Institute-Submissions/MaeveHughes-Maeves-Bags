@@ -60,7 +60,7 @@ When testing this app, to make a payment, the following details should be used:
 2. As a first time user, I would like to view a list of bags.
 3. As a first time user, I want to be able to view individual bag details.
 4. As a first time user, I want to be able to easily view the total of my purchases at any time.
-5. As a first time user, I want to be able to contact the business with any queries I may have. 
+5. As a first time user, I want to be able to contact the business with any queries I may have and sign up to their newsletter. 
 
 #### Registration & User Accounts
 6. As a site user, I want to be able to easily register for an account.
@@ -111,7 +111,7 @@ The key features of the website were developed based on the user stories.
 
 - Confirmation page, allowing users to see a confirmation of their order.
 
-- Contact Page, where users can view the contact details for the company and contact the company using the contact form.
+- Contact Page, where users can view the contact details for the company and contact the company using the contact form. Users also have the ability to sign up to the newsletter using the contact form.
 
 - Sign Up Page, where users can register to become a registered user.
 
@@ -157,7 +157,7 @@ This website has 10 custom built pages and 14 (not all are used) account operati
 
 * Sign Up - The page gives users the ability to register by using a form. Users have to provide their email address, email address confirmation, username, password and password confirmation. There is two buttons at the bottom of the page: One to register and one back to the login page.
 
-* Contact - A simple contact form that is sent to the site owner and the page also includes the companys contact details. The form is sent by email to the site owner. Contact messages can be located on the site administration page (for superusers only).
+* Contact - A simple contact form that is sent to the site owner and the page also includes the companys contact details. The form is sent by email to the site owner. Users can use the contact form to sign up to the newsletter also. Contact messages can be located on the site administration page (for superusers only).
 
 
 **Accessible to signed in users**
