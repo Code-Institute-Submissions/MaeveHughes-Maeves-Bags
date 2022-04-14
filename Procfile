@@ -1,1 +1,1 @@
-web: gunicorn maevesbags.wsgi:application
+web: gunicorn maeves_bags.wsgi:application
