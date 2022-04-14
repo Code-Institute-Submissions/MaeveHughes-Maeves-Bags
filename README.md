@@ -89,7 +89,7 @@ When testing this app, to make a payment, the following details should be used:
 23. As a site owner, I want to be able to add, edit and remove products from the site easily. 
 24. As a site owner, I want access to an admin section to view and manage orders. 
 
-The User Stories were tracked and managed using an excel workbook, similiar to the process on the Code Institutes Boutique Ado project:
+The User Stories were tracked and managed using an excel workbook and a kandan board on GitHub, similiar to the process on the Code Institutes Boutique Ado project:
 
 ![DBDiagram](documentation/UserStories.png)
 
@@ -139,7 +139,7 @@ This website has 10 custom built pages and 14 (not all are used) account operati
 
 **Accessible to all users**
 
-* Header and navigation bar - The brang name is on the top left corner with a link to home page. Visible only on large screens. The navbar consists of the products navigation menu, with sorting or filtering possibilities. My account dropdown list of options for register and login. When registered, the dropdown list contains profile and logout links. There is a search bar for looking after products by name or key words in description. Bag icon with link to your bag list items and the total price of the selected order. The mobile navbar has the same search and cart links, however rather than links to the products, there is a collapsible side nav which is triggered by a burger menu. 
+* Header and navigation bar - The brand name is on the top left corner with a link to home page. Visible only on large screens. The navbar consists of the products navigation menu, with sorting or filtering possibilities. My account dropdown list of options for register and login. When registered, the dropdown list contains profile and logout links. There is a search bar for looking after products by name or key words in description. Bag icon with link to your bag list items and the total price of the selected order. The mobile navbar has the same search and cart links, however rather than links to the products, there is a collapsible side nav which is triggered by a burger menu. 
 
 * Home - The landing page of the site, with striking image of a fashionable woman holding a handbag on their arm and a informative statement outlining "The new collections are here for Spring | Summer 2022", followed by a shop now button. This is sitting on a marble background image. This gives first time visitors a nice welcome.
 
