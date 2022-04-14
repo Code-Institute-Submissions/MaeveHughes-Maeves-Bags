@@ -14,7 +14,7 @@ Responsive Design for Ipad and Iphone:
 
 Maeve's Bags was built as the 5th milestone project as part of Code Institute's Full Stack Software Software Development course. The full stack application uses a Django framework, HTML, CSS, Javascript and Python. 
 
-Maeve's Bags is an ecommerce web application for customers seeking to purchase bags online. Visitors to the site would be able to browse all products by sorting, searching and by the various bag categories. Visitors can also register for an account to view past orders and contact the company with any queries.
+Maeve's Bags is an ecommerce web application for customers seeking to purchase bags online. Visitors to the site would be able to browse all products by sorting, searching and by the various bag categories. Visitors can also register for an account to view past orders and contact the company with any queries or if they want to sogn up to the newsletter.
 
 Please note that the website is for educational purposes only. Stripe's credit card payment functionality is active but remains in a "test mode" so that no payments will be taken. Please do not enter any personal credit/debit card numbers whilst using the site. 
 
