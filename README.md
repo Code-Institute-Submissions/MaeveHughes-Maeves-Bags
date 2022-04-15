@@ -4,7 +4,7 @@
 
 View the repository in GitHub [here](https://github.com/MaeveHughes/Maeves-Bags)
 
-View the live project [here] (https://maevesbags.herokuapp.com/)
+View the live project [here](https://maevesbags.herokuapp.com/)
 
 Responsive Design for Ipad and Iphone:
     - [IPad](documentation/IpadHomePage.png)
@@ -12,9 +12,9 @@ Responsive Design for Ipad and Iphone:
 
 # Project Overview
 
-Maeve's Bags was built as the 5th milestone project as part of Code Institute's Full Stack Software Software Development course. The full stack application uses a Django framework, HTML, CSS, Javascript and Python. 
+Maeve's Bags was built as the 5th milestone project as part of Code Institute's Full Stack Software Development course. The full stack application uses a Django framework, HTML, CSS, Javascript and Python. 
 
-Maeve's Bags is an ecommerce web application for customers seeking to purchase bags online. Visitors to the site would be able to browse all products by sorting, searching and by the various bag categories. Visitors can also register for an account to view past orders and contact the company with any queries or if they want to sogn up to the newsletter.
+Maeve's Bags is an ecommerce web application for customers seeking to purchase bags online. Visitors to the site would be able to browse all products by sorting, searching and by the various bag categories. Visitors can also register for an account to view past orders and contact the company to sign up to the newsletter or to raise any questions they may have.
 
 Please note that the website is for educational purposes only. Stripe's credit card payment functionality is active but remains in a "test mode" so that no payments will be taken. Please do not enter any personal credit/debit card numbers whilst using the site. 
 
@@ -91,7 +91,8 @@ When testing this app, to make a payment, the following details should be used:
 
 The User Stories were tracked and managed using an excel workbook and a kandan board on GitHub, similiar to the process on the Code Institutes Boutique Ado project:
 
-![DBDiagram](documentation/UserStories.png)
+![UserStories](documentation/UserStories.png)
+![KandanBoard](documentation/kandanboard.png)
 
 ## Scope
 
@@ -99,7 +100,7 @@ The key features of the website were developed based on the user stories.
 
 ### For any site user: 
 
-- Home page, with striking image of a fashionable person holding a handbag on their arm which quickly helps users to understand the purpose of the site.
+- Home page, with striking image of a fashionable woman holding a handbag on their arm which quickly helps users to understand the purpose of the site.
 
 - Products Page, where users can view all the products or products based on filtering criteria. 
 
@@ -111,8 +112,6 @@ The key features of the website were developed based on the user stories.
 
 - Confirmation page, allowing users to see a confirmation of their order.
 
-- Contact Page, where users can view the contact details for the company and contact the company using the contact form. Users also have the ability to sign up to the newsletter using the contact form.
-
 - Sign Up Page, where users can register to become a registered user.
 
 ### For registered users: 
@@ -122,6 +121,8 @@ All of the above plus:
 - Profile Page, where users can update their default delivery information allowing for ease at checkout. 
 
 - Order History, from the profile page, users can see the previous orders they have made. 
+
+- Contact Page, where users can view the contact details for the company and contact the company using the contact form. Users also have the ability to sign up to the newsletter using the contact form.
 
 - Log Out Page, where users can log out of their account. 
 
@@ -139,17 +140,17 @@ This website has 10 custom built pages and 14 (not all are used) account operati
 
 **Accessible to all users**
 
-* Header and navigation bar - The brand name is on the top left corner with a link to home page. Visible only on large screens. The navbar consists of the products navigation menu, with sorting or filtering possibilities. My account dropdown list of options for register and login. When registered, the dropdown list contains profile and logout links. There is a search bar for looking after products by name or key words in description. Bag icon with link to your bag list items and the total price of the selected order. The mobile navbar has the same search and cart links, however rather than links to the products, there is a collapsible side nav which is triggered by a burger menu. 
+* Header and navigation bar - The brand name is on the top left corner with a link to home page. This is only visible on large screens. To access the homepage on the mobile view, users have to use the hamburger menu and select home. The navbar consists of the products navigation menu, with sorting or filtering possibilities. My account dropdown provides users with a list of options to register and login. When registered, the dropdown list contains profile and logout links. There is a search bar for looking up products by name or key words in the description. Bag icon is a link to your bag list items and the total price of the selected order. The mobile navbar has the same search and cart links, however rather than links to the products, there is a collapsible side nav which is triggered by a hamburger menu. 
 
 * Home - The landing page of the site, with striking image of a fashionable woman holding a handbag on their arm and a informative statement outlining "The new collections are here for Spring | Summer 2022", followed by a shop now button. This is sitting on a marble background image. This gives first time visitors a nice welcome.
 
-* Products - This is a list of all products when clicking on the shop now button on the home page, clicking on a category in the navbar, or performing a search. There is a sorting option for prices and rating in ascending or descending way. The layout of the products page is similar to that of the Boutique Ado walkthrough project by displaying 4 products in a row on extra large screens, 3 on large screens, 2 on medium and small devices and 1 on extra small screen sizes. Basic product information is displayed below the product image (product name, price and a view product details button). As there may be a large amount of products displayed on a page, I have added a back to top button which appears when the user scrolls to the bottom of the page. I have deliberately put this at the bottom of the page so the focus is not drawn away from the products.
+* Products - This is a list of all products when clicking on the shop now button on the home page, clicking on a category in the navbar, or performing a search. There is a sorting option for prices in ascending or descending way. The layout of the products page is similar to that of the Boutique Ado walkthrough project by displaying 4 products in a row on extra large screens, 3 on large screens, 2 on medium and small devices and 1 on extra small screen sizes. Basic product information is displayed below the product image (product name, price and a view product details button). As there may be a large amount of products displayed on a page, I have added a back to top button which appears when the user scrolls to the bottom of the page. I have deliberately put this at the bottom of the page so the focus is not drawn away from the products.
 
-* Product Detail - When choosing one specific product, a new page opens that contains the chosen product, its details, input quantity option and a button to add it to bag. Admin users are also able to edit and delete products using the icons featured in this section. Products can be added to the bag by clicking the add to bag button. Users can return to an all products view by clicking the "Continue Shopping" button.
+* Product Detail - When choosing one specific product, a new page opens that contains the chosen product, its details, input quantity option and a button to add it to the bag. Admin users are also able to edit and delete products using the icons featured in this section. Products can be added to the bag by clicking the add to bag button. Users can return to an all products view by clicking the "Continue Shopping" button.
 
 * Cart - A user purchases an item by adding it to the cart. The Cart is the users digital shopping cart, containing all products the user has added to it and their details, including the chosen quantity. Each product from the bag contains its name, image, price, quantity selected and the subtotal which is price multiplied by quantity. The user has the option to update each products quantity or remove it (this is only currently available on desktop view). The grand total with delivery included is displayed and two buttons: one to proceed to checkout and one to go back and shop more. If a user does not meet the free delivery threshold a helpful message will be displayed to let them know what they need to spend in order to qualify for free delivery. If the user has no items in the shopping bag, a message is displayed to the user to let them know this and a button to take the user to the all products page is displayed.
 
-* Checkout - The checkout page features a form for the user to fill in, with name, email, phone number, delivery address. The checkout page contains the payment form from Stripe that takes: card number, CVC, expiry date and ZIP code. The page includes an order summary , as a table with products name, images (images are links that will take the user back to the product details page for that product details)quantity selected, subtotal. Also, the delivery costs, grand total and a button that redirects to bag for adjusting it if needed. From the checkout page, if user is authenticated, they can save their details to their My Profile so they are prefilled for the next order. 
+* Checkout - The checkout page features a form for the user to fill in, with name, email, phone number, delivery address. The checkout page contains the payment form from Stripe that takes: card number, CVC, expiry date and ZIP code. The page includes an order summary , as a table with products name, images (images are links that will take the user back to the product details page for that product details)quantity selected, subtotal. Also, the delivery costs, grand total and a button that redirects to bag for adjusting if needed. From the checkout page, if user is authenticated, they can save their details to their My Profile so they are prefilled for the next order. 
 
 * Order Confirmation - The page shows when a payment has successfully been made and an order confirmation will be displayed to the user. The confirmation will also be sent to the given email address during checkout. If the order was successful, the cart will be emptied. In the confirmation, the user can view the items order, the quantity, an order number, grand total and delivery details. At the bottom of the page their is a link back to the products to encourage users to purchse more items.
 
@@ -157,20 +158,19 @@ This website has 10 custom built pages and 14 (not all are used) account operati
 
 * Sign Up - The page gives users the ability to register by using a form. Users have to provide their email address, email address confirmation, username, password and password confirmation. There is two buttons at the bottom of the page: One to register and one back to the login page.
 
-* Contact - A simple contact form that is sent to the site owner and the page also includes the companys contact details. The form is sent by email to the site owner. Users can use the contact form to sign up to the newsletter also. Contact messages can be located on the site administration page (for superusers only).
-
-
 **Accessible to signed in users**
 
 * My Profile - Each user can access their own personal profile to view order history and the users billing and shipping details is here. A message to inform the user that this is a past order confirmation is displayed to avoid confusion.
 
-* Sign Out - The page gives users the ability to log out of the site. There is two buttons at the bottom of the page: One to log in and one back to the products page.
+* Contact - A simple contact form for users to make queries and to sign up to the newsletter. The page also includes the companys contact details. The form is sent by email to the site owner. Contact messages can be located on the site administration page (for superusers only).
+
+* Sign Out - The page gives users the ability to log out of the site. There is two buttons at the bottom of the page: One to log in and one back to the home page.
 
 * Other accounts operations pages such as Forgot Password.
 
 **Accessible to Admin users**
 
-* Add Product - This is where admin users can add new products to the website. Admin users have to fill out a form with the following details: name, sku, price, category, rating, description and also have the option to upload an image. If the admin user decides not to use an image it will use the default image. At the end of the form there is two buttons: one to add product and the other to cancel which will bring the user back to the admin page.
+* Add Product - This is where admin users can add new products to the website. Admin users have to fill out a form with the following details: name, sku, price, category, rating, description and also have the option to upload an image. If the admin user decides not to use an image it will use the default image. At the end of the form there is two buttons: one to add product and the other to cancel which will bring the user back to the products page.
 
 * Edit Product - The page for admin users to edit or delete products. In order to access this page the admin user will have to open a particular product and select the buttons edit or delete. If the user decides to edit a product they have the option to edit the following details: name, sku, price, category, rating, description and image. If the user clicks on the delete button the product is automatically deleted.
 
@@ -179,9 +179,9 @@ This website has 10 custom built pages and 14 (not all are used) account operati
 
 These pages are provided by the Allauth package of the Django framework, but are customised by me to fit in with the rest of the site. Read more about Allauth [here](https://django-allauth.readthedocs.io/en/latest/)
 
-* Sign Up - where users can register for an account on the site.
+* Sign Up - Where users can register for an account on the site.
 
-* Sign in - Registered users can log accessing their personal info etc by signing in.
+* Sign in - Registered users can log in accessing their personal info etc by signing in.
 
 * Sign Out - Registered users can log out of the site.
 
@@ -235,10 +235,10 @@ The wireframes have been created using moqups and show for Desktop, iPad and iPh
 
 #### Colour Scheme
 
-- I wanted to create a basic colour scheme for this site so the products would stand out to the users. I picked a marble image from postermywall to be the background image on all the pages on the site. This is a modern and on trend look for the site and does not take away from the products which was the main objective. The marble background is off white and a light shade of black. I wanted to keep this colour scheme throughout the site. The font throught the site is mainly black. I was concerned that black and white can be quite bland, so wanted to ensure the site was catching to the eye at the same time so added pop of green and white for some of the buttons on the site. The colours were taken from bootstrap.
+- I wanted to create a basic colour scheme for this site so the products would stand out to the users. I picked a marble image from postermywall to be the background image on all the pages on the site. This is a modern and on trend look for the site and does not take away from the products which was the main objective. The marble background is off white and a light shade of black. I wanted to keep this colour scheme throughout the site. The font throughout the site is mainly black. I was concerned that black and white can be quite bland, so wanted to ensure the site was catching to the eye at the same time so added pop of green and white for some of the buttons on the site. The colours were taken from bootstrap.
 
 #### Typography
-- I have used Lato throughtout the site. This font was stratgeically chosen as it is elligible in lowercase and uppercase. As the colouring on the site is quite simple, I wanted the font to reflect the same.
+- I have used Lato throughtout the site. This font was stratgeically chosen as it is eligible in lowercase and uppercase. As the colouring on the site is quite simple, I wanted the font to reflect the same.
 
 #### Imagery
 - Due to the nature of the products I have had to rely on other retailer's products and modify them for use on my site. For the most part product images have come from [Zalando](https://www.zalando.ie/) and other online retailers (credited in the credits section).
@@ -247,7 +247,7 @@ The wireframes have been created using moqups and show for Desktop, iPad and iPh
 
 #### Icons
 
-- I've made use of icons in various sections on the site. They have been used for navigation: cart, social media links, product tags, search bar and checkout. All icons have been obtained from FontAwesome. 
+- I've made use of icons in various sections on the site. They have been used for navigation: bag, social media links, product tags, search bar and checkout. All icons have been obtained from FontAwesome. 
 
 ## Information Architechture:
 
@@ -291,8 +291,8 @@ The wireframes have been created using moqups and show for Desktop, iPad and iPh
 ### Fixtures
 
 Fixtures were created for the following:
-- Category
-- Product
+- Categories
+- Products
 
 # Technologies Used
 
@@ -313,23 +313,22 @@ Fixtures were created for the following:
 - [Amazon Web Services](https://aws.amazon.com/) S3 was used to store all static CSS and Javascript files, and images.
 - [SQLite3](https://www.sqlite.org/index.html) is the database that was used in production.
 - [PostgreSQL](https://www.postgresql.org/) is the database used by the deployed site.
-- [Heroku](https://www.heroku.com/) hosts the Milestone Project 04 website.
+- [Heroku](https://www.heroku.com/) hosts the Milestone Project.
 - [JQuery](https://jquery.com/) was used extensively throughout the site, in order to provide functionality for Bootstrap elements, and for Stripe. 
 - [GitPod](https://gitpod.io/) was used as an IDE for this project. 
-- [GitHub](https://github.com/) is where the Milestone Project 04's repository is stored. Regular commits were made throughout, and code was pushed to GitHub from GitPod.
+- [GitHub](https://github.com/) is where the Milestone Project repository is stored. Regular commits were made throughout, and code was pushed to GitHub from GitPod.
 - [Font Awesome](https://fontawesome.com/) was used for icons on the site.
 
 # Testing
 
  - There is a link on the contact page to the Facebook business page and there is also dead links to Instagram, Youtube and Twitter, all styled using their icons. [Screenshot of the facebook page](documentation/facebook.png)
  - There are no errors and warnings in the Developer console
- - Tested using lighthouse and it passes the result
+ - Tested using lighthouse and it passes the result. [Screenshot of the facebook page](documentation/lighthouse.png)
  - The page is fully responsive and has been tested using the Developer console.
  - Tested about, bag, check out, contact, home, review and products pages in all devices. All working fine.
  - There is no error in python codes as it passes through Pep8 online check.
  - There is no error in javascript codes as it passes through JsHint.
  - There is no error in CSS and HTML as it passes through W3C validators.
- - All the codes were formatted using git pod buit-in document formatter.
  - Tested every functionality like Stripe, add/edit/delete products, email, contact, check out, and confirmation email. All working fine.
 
 # Deployment
@@ -459,13 +458,15 @@ if 'USE_AWS' in os.environ:
 
 - **Code Institute Boutique Ado Project**: Code institutes Boutique Ado app provided the building blocks for the project and was used as a primary resource.
 
+- **Youtube**: YouTube was used to help create the contact app.
+
 - **Code Institute Slack Channels**: Slack was used extensively for debugging, and to look for ideas off other students and CI staff members.
 
 -**W3 Schools**: W3 Schools was referenced for debugging purposes.
 
 ### Images: 
 
-- All product images and descriptions are the property of Zalando, Brown Thomas, Prada, Farfetch, Mulberry, Marc Jacobs, Gucci and Chanel websites.
+- All product images and descriptions are the property of [Zalando](https://www.zalando.ie/women-home/), [Brown Thomas](https://www.brownthomas.com/), [Prada](https://www.prada.com/ie/en.html), [Farfetch](https://www.farfetch.com/ie/shopping/women/items.aspx), [Mulberry](https://www.mulberry.com/ie/), [Marc Jacobs](https://www.marcjacobs.com/default/home), [Gucci](https://www.gucci.com/us/en/) and [Chanel](https://www.chanel.com/#) websites.
 
 - The background image on the site is from [postermywall](https://www.postermywall.com/)
 
@@ -476,7 +477,7 @@ if 'USE_AWS' in os.environ:
 
 ### Content:
 
-- All content on the site was either taken from the Boutique Ado project, Zalando, Brown Thomas, Prada, Farfetch, Mulberry, Marc Jacobs, Gucci and Chanel websites or written by the developer.
+- All content on the site was either taken from the Boutique Ado project, Zalando, Brown Thomas, Prada, Farfetch, Mulberry, Marc Jacobs, Gucci and Chanel websites (links to website above) or written by the developer.
 
 ## Acknowledgements:
 
