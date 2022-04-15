@@ -323,7 +323,7 @@ Fixtures were created for the following:
 
  - There is a link on the contact page to the Facebook business page and there is also dead links to Instagram, Youtube and Twitter, all styled using their icons. [Screenshot of the facebook page](documentation/facebook.png). Links are working fine.
  - There are no errors and warnings in the Developer console.
- - Tested using lighthouse and it passes the result. [Screenshot of the facebook page](documentation/lighthouse.png)
+ - Tested using lighthouse and it passes the result. [Screenshot of the Lighthouse results](documentation/lighthouse.png)
  - The page is fully responsive and has been tested using the Developer console.
  - Tested about, bag, check out, contact, home, review and products pages in all devices. All working fine.
  - There is no error in python codes as it passes through Pep8 online check.
