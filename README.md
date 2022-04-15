@@ -12,7 +12,7 @@ Responsive Design for Ipad and Iphone:
 
 # Project Overview
 
-Maeve's Bags was built as the 5th milestone project as part of Code Institute's Full Stack Software Development course. The full stack application uses a Django framework, HTML, CSS, Javascript and Python. 
+Maeve's Bags was built as the 5th Portfolio Project as part of Code Institute's Full Stack Software Development course. The full stack application uses a Django framework, HTML, CSS, Javascript and Python. 
 
 Maeve's Bags is an ecommerce web application for customers seeking to purchase bags online. Visitors to the site would be able to browse all products by sorting, searching and by the various bag categories. Visitors can also register for an account to view past orders and contact the company to sign up to the newsletter or to raise any questions they may have.
 
@@ -45,8 +45,8 @@ When testing this app, to make a payment, the following details should be used:
     - [Connecting Stripe to Heroku](#connecting-stripe-to-heroku)
 6. [Credits](#credits)
     - [Code](#code)
-    - [Media](#media)
-    - [Blog Credits](#blog-credits)
+    - [Images](#images)
+    - [Content](#content)
 7. [Acknowledgments](#acknowledgments)
 
 # User Experience (UX)
@@ -249,14 +249,14 @@ The wireframes have been created using moqups and show for Desktop, iPad and iPh
 
 - I've made use of icons in various sections on the site. They have been used for navigation: bag, social media links, product tags, search bar and checkout. All icons have been obtained from FontAwesome. 
 
-## Information Architechture:
+## Information Architecture:
 
-### Database Choice:
+### Database:
 
 - SQLight was used in development, as it comes pre-installed with Django.
 - PostgreSQL was used for the deployed site, as it is offered as an optional add-on by Heroku.
 
-### Data Modeling:
+### Data Model:
 
 - The image below was produced using the [dbdiagram.io](https://dbdiagram.io/)
 
@@ -313,10 +313,10 @@ Fixtures were created for the following:
 - [Amazon Web Services](https://aws.amazon.com/) S3 was used to store all static CSS and Javascript files, and images.
 - [SQLite3](https://www.sqlite.org/index.html) is the database that was used in production.
 - [PostgreSQL](https://www.postgresql.org/) is the database used by the deployed site.
-- [Heroku](https://www.heroku.com/) hosts the Milestone Project.
+- [Heroku](https://www.heroku.com/) hosts the Portfolio Project.
 - [JQuery](https://jquery.com/) was used extensively throughout the site, in order to provide functionality for Bootstrap elements, and for Stripe. 
 - [GitPod](https://gitpod.io/) was used as an IDE for this project. 
-- [GitHub](https://github.com/) is where the Milestone Project repository is stored. Regular commits were made throughout, and code was pushed to GitHub from GitPod.
+- [GitHub](https://github.com/) is where the Portfolio Project repository is stored. Regular commits were made throughout, and code was pushed to GitHub from GitPod.
 - [Font Awesome](https://fontawesome.com/) was used for icons on the site.
 
 # Testing
@@ -325,7 +325,7 @@ Fixtures were created for the following:
  - There are no errors and warnings in the Developer console.
  - Tested using lighthouse and it passes the result. [Screenshot of the Lighthouse results](documentation/lighthouse.png)
  - The page is fully responsive and has been tested using the Developer console.
- - Tested about, bag, check out, contact, home, review and products pages in all devices. All working fine.
+ - Tested bag, check out, contact, home, products and product details pages in all devices. All working fine.
  - There is no error in python codes as it passes through Pep8 online check.
  - There is no error in javascript codes as it passes through JsHint.
  - There is no error in CSS and HTML as it passes through W3C validators.
@@ -380,7 +380,7 @@ and migrate the database models to the Postgres database using the following com
 ```
 python3 manage.py migrate
 ```
-12. Load the fixtures from the 'product_types.json' file and then from the 'products.json' file - which are contained in the 'fixtures' folder into the database. 
+12. Load the fixtures from the 'categories.json' file and then from the 'products.json' file - which are contained in the 'fixtures' folder into the database. 
 This is done by using the following command:
 ```
 python3 manage.py loaddata <file name>
@@ -407,7 +407,7 @@ else:
 ```
 15. Disable 'COLLECTSTATIC' with the fillowing code: ``` heroku config:set DISABLE_COLLECTSTATIC=1 ``` 
 so that Heroku doesn't attempt to collect the static files.
-16. Add ```ALLOWED_HOSTS = ['milestone-project-04.herokuapp.com', 'localhost']``` to settings.py.
+16. Add ```ALLOWED_HOSTS = ['maevesbags.herokuapp.com', 'localhost']``` to settings.py.
 17. Add Stripe environment variables to settings.py.
 18. Push to Heroku using the following command:
 ```git push heroku main```
@@ -432,7 +432,7 @@ if 'USE_AWS' in os.environ:
     }
 
     # Bucket Config
-    AWS_STORAGE_BUCKET_NAME = 'milestone-project-04'
+    AWS_STORAGE_BUCKET_NAME = 'maevesbags'
     AWS_S3_REGION_NAME = 'eu-west-1'
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
@@ -479,7 +479,7 @@ if 'USE_AWS' in os.environ:
 
 - All content on the site was either taken from the Boutique Ado project, Zalando, Brown Thomas, Prada, Farfetch, Mulberry, Marc Jacobs, Gucci and Chanel websites (links to website above) or written by the developer.
 
-## Acknowledgements:
+### Acknowledgements:
 
 - **My Mentor** Thanks to my mentor Gerard Mcbride for his time and support. 
 - **My Friends and Family** for constant support, and feedback on the content and functionality.
