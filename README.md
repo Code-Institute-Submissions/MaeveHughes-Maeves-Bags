@@ -458,6 +458,8 @@ if 'USE_AWS' in os.environ:
 
 - **Code Institute Boutique Ado Project**: Code institutes Boutique Ado app provided the building blocks for the project and was used as a primary resource.
 
+- **Tawnygoody/Tarmachan**: Tawnygoody provided the building blocks for the 404 error html page.
+
 - **Youtube**: YouTube was used to help create the contact app.
 
 - **Code Institute Slack Channels**: Slack was used extensively for debugging, and to look for ideas off other students and CI staff members.
@@ -479,7 +481,7 @@ if 'USE_AWS' in os.environ:
 
 - All content on the site was either taken from the Boutique Ado project, Zalando, Brown Thomas, Prada, Farfetch, Mulberry, Marc Jacobs, Gucci and Chanel websites (links to website above) or written by the developer.
 
-### Acknowledgements:
+## Acknowledgements:
 
 - **My Mentor** Thanks to my mentor Gerard Mcbride for his time and support. 
 - **My Friends and Family** for constant support, and feedback on the content and functionality.
