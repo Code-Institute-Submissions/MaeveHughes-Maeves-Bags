@@ -19,3 +19,12 @@ class Contact(models.Model):
     def __str__(self):
         # pylint: disable=invalid-str-returned, invalid-name
         return self.full_name
+
+
+class NewsletterSubscription(models.Model):
+    """Model to subscribe to Newsletter"""
+    email = models.EmailField(max_length=100, null=False, blank=False)
+
+    def __str__(self):
+        # pylint: disable=invalid-str-returned, invalid-name
+        return self.email

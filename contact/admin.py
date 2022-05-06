@@ -7,6 +7,16 @@ Most of the code is derived from https://www.youtube.com/watch?v=VOddmV4Xl1g
 from django.contrib import admin
 
 # - - - - - Internal Imports - - - - - - - - -
-from .models import Contact
+from .models import NewsletterSubscription, Contact
+
+
+class NewsletterAdmin(admin.ModelAdmin):
+    """Newsletter Admin"""
+    model = NewsletterSubscription
+    list_display = (
+        'email',
+    )
+
 
 admin.site.register(Contact)
+admin.site.register(NewsletterSubscription, NewsletterAdmin)
