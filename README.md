@@ -321,15 +321,43 @@ Fixtures were created for the following:
 
 # Testing
 
- - There is a link on the contact page to the Facebook business page and there is also dead links to Instagram, Youtube and Twitter, all styled using their icons. [Screenshot of the facebook page](documentation/facebook.png). Links are working fine.
+Testing is been done manually and have gone through all the features the site provides for all types of screens, from small to desktop screens. All the features responding as expected 
+
+- **Header and navigation bar:** The brand name is on the top left corner with a link to home page, link working correctly on larger screens. Mobile users can access the home page by clicking on the hamburger menu and selecting home, link working correctly. The navigation menu and links are working properly as well as the sorting and filtering options. My account dropdown provides users with a list of options to register and login, links working correctly. When registered, the dropdown list contains profile and logout links, these links are also working. There is a search bar for looking up products by name or key words in the description, which is working. Bag icon is a link to your bag list items, link working correctly. The mobile navbar has the same search and cart links and links are working. There is a collapsible side nav which is triggered by a hamburger menu to provide users links to the products and hamburger manu and the links are working.
+
+- **Home:** - The landing page of the site has an image and a informative statement outlining "The new collections are here for Spring | Summer 2022", followed by a shop now button. The shop now button brings you to the products page and this working correctly.
+
+- **Products Page:** - There is a sorting option for prices in ascending or descending way, buttons working correctly. There is a back to top button at the bottom of the page which is working correctly. Basic product information is displayed below the product image: product name, price and a view product details button, the button is working correctly.
+
+- **Product details:** All the details entered for a product are present and all the links are clickable and none are broken. The site user can see all product details, click on 'quantity', 'add to bag' or 'continue shopping' only; while the admin user has the extra access to 'edit' and 'delete' links (which are fully functional).
+
+- **Cart:** The feature is working as expected as well, link to the selected products are working correctly, the quantity can be amended as well with no issues (quantity doesn't go beyond 99 or below 1), 'Update' and 'Remove' buttons working as well as 'continue shopping' and 'secure checkout'.
+
+- **Checkout:** Page loading successfully, delivery information also adds correctly to the delivery form as well as good functioning of 'Adjust Bag' and 'Complete Order' buttons. The checkout page contains the payment form from Stripe that takes: card number, CVC, expiry date and ZIP code, which is working correctly. The summary of selected items to buy show correctly including the book cover, name, author, quantity selected, subtotal, total, delivery amount and grand total.
+
+- **Order Confirmation:** - The page shows when a payment has successfully been made and an order confirmation will be displayed to the user. At the bottom of the page their is a link back to the products to encourage users to purchse more items and the link is working.
+
+- **Login/logout/register:** Sign In - The page gives users the ability to log into the site by using a form. Users have to provide their username and password. There is two buttons at the bottom of the page: One to log in and one back to the home page and they are working. Sign Up - The page gives users the ability to register by using a form. Users have to provide their email address, email address confirmation, username, password and password confirmation. There is two buttons at the bottom of the page: One to register and one back to the login page and they are all working. Sign Out - The page gives users the ability to log out of the site. There is two buttons at the bottom of the page: One to log in and one back to the home page, these are also working.
+
+- **My Profile:** From 'My Profile' dropdown menu the superuser can add products, the form is working as expected and images are added with no issues. The 'Add' and 'Cancel' buttons are working as well.
+
+- **Contact / Newsletter:** A simple contact form for users to make queries and to sign up to the newsletter, this is functioning as it should.
+
+- **Add Product:** - This is where admin users can add new products to the website. Admin users have to fill out a form with the following details: name, sku, price, category, rating, description and also have the option to upload an image. If the admin user decides not to use an image it will use the default image. At the end of the form there is two buttons: one to add product and the other to cancel which will bring the user back to the products page. Form is working as expected.
+
+- **Edit / Delete Product:** - The page for admin users to edit or delete products. In order to access this page the admin user will have to open a particular product and select the buttons edit or delete. If the user decides to edit a product they have the option to edit the following details: name, sku, price, category, rating, description and image. If the user clicks on the delete button the product is automatically deleted. Edit and delete functioanality is working as it should.
+
+- **Pop Up Messages:** All pop up messages working correctly and appearing when expected:
+    - Confirmation messages when logging in/out and registering, when adding an item to the bag, when signing up for the newsletter and when making a purchase.
+    - Information messages: when an information to the user is required, i.e. when a user tries to log in without registering first.
+
+
+#### **Validator Testing**
  - There are no errors and warnings in the Developer console.
  - Tested using lighthouse and it passes the result. [Screenshot of the Lighthouse results](documentation/lighthouse.png)
- - The page is fully responsive and has been tested using the Developer console.
- - Tested bag, check out, contact, home, products and product details pages in all devices. All working fine.
- - There is no error in python codes as it passes through Pep8 online check.
- - There is no error in javascript codes as it passes through JsHint.
- - There is no error in CSS and HTML as it passes through W3C validators.
- - Tested every functionality like Stripe, add/edit/delete products, email, contact, check out, and confirmation email. All working fine.
+ - There is no error in python codes as it passes through [PEP8online.com](http://pep8online.com/).
+ - There is no error in javascript codes as it passes through [JSHint](https://jshint.com/).
+ - There is no error in CSS and HTML as it passes through [W3C](https://validator.w3.org/#validate_by_input).
 
 # Deployment
 
