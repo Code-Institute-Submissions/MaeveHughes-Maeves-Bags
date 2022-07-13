@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 CSRF_TRUSTED_ORIGINS = ['https://8000-maevehughes-maevesbags-q8zgfney6u5.ws-eu44.gitpod.io/']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['maevesbags.herokuapp.com', 'localhost']
 
