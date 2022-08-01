@@ -8,7 +8,14 @@ from django import forms
 
 # - - - - - Internal Imports - - - - - - - - -
 from .widgets import CustomClearableFileInput
-from .models import Product, Category
+from .models import ProductReview, Product, Category
+
+
+class ReviewForm(forms.ModelForm):
+
+    class Meta:
+        model = ProductReview
+        exclude = ('product', 'user', 'date_added')
 
 
 class ProductForm(forms.ModelForm):
