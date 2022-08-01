@@ -104,7 +104,7 @@ The key features of the website were developed based on the user stories.
 
 - Products Page, where users can view all the products or products based on filtering criteria. 
 
-- Product Detail Page, detailing information about the product. From here users can add products to their bags or decide to return to the products page.
+- Product Detail Page, detailing information about the product. From here users can add products to their bags or decide to return to the products page. Underneath the product detail there is a form where users can write a review and provide a star rating. Only users that are logged in can leave a review.
 
 - Shopping Bag page, where users can see what products have been added to their bag and adjust the quantity as needed.
 
@@ -146,7 +146,7 @@ This website has 10 custom built pages and 14 (not all are used) account operati
 
 * Products - This is a list of all products when clicking on the shop now button on the home page, clicking on a category in the navbar, or performing a search. There is a sorting option for prices in ascending or descending way. The layout of the products page is similar to that of the Boutique Ado walkthrough project by displaying 4 products in a row on extra large screens, 3 on large screens, 2 on medium and small devices and 1 on extra small screen sizes. Basic product information is displayed below the product image (product name, price and a view product details button). As there may be a large amount of products displayed on a page, I have added a back to top button which appears when the user scrolls to the bottom of the page. I have deliberately put this at the bottom of the page so the focus is not drawn away from the products.
 
-* Product Detail - When choosing one specific product, a new page opens that contains the chosen product, its details, input quantity option and a button to add it to the bag. Admin users are also able to edit and delete products using the icons featured in this section. Products can be added to the bag by clicking the add to bag button. Users can return to an all products view by clicking the "Continue Shopping" button.
+* Product Detail - When choosing one specific product, a new page opens that contains the chosen product, its details, input quantity option and a button to add it to the bag. Admin users are also able to edit and delete products using the icons featured in this section. Products can be added to the bag by clicking the add to bag button. Users can return to an all products view by clicking the "Continue Shopping" button. Only users that are logged in can leave a review.
 
 * Cart - A user purchases an item by adding it to the cart. The Cart is the users digital shopping cart, containing all products the user has added to it and their details, including the chosen quantity. Each product from the bag contains its name, image, price, quantity selected and the subtotal which is price multiplied by quantity. The user has the option to update each products quantity or remove it (this is only currently available on desktop view). The grand total with delivery included is displayed and two buttons: one to proceed to checkout and one to go back and shop more. If a user does not meet the free delivery threshold a helpful message will be displayed to let them know what they need to spend in order to qualify for free delivery. If the user has no items in the shopping bag, a message is displayed to the user to let them know this and a button to take the user to the all products page is displayed.
 
@@ -329,7 +329,7 @@ Testing is been done manually and have gone through all the features the site pr
 
 - **Products Page:** - There is a sorting option for prices in ascending or descending way, buttons working correctly. There is a back to top button at the bottom of the page which is working correctly. Basic product information is displayed below the product image: product name, price and a view product details button, the button is working correctly.
 
-- **Product details:** All the details entered for a product are present and all the links are clickable and none are broken. The site user can see all product details, click on 'quantity', 'add to bag' or 'continue shopping' only; while the admin user has the extra access to 'edit' and 'delete' links (which are fully functional).
+- **Product details:** All the details entered for a product are present and all the links are clickable and none are broken. The site user can see all product details, click on 'quantity', 'add to bag' or 'continue shopping' only; while the admin user has the extra access to 'edit' and 'delete' links (which are fully functional). Underneath the products detail there is a form that users can fill out if they are logged in. If the user presses the submit review button they are. brought back to the products details page and they will see their comment under the form.
 
 - **Cart:** The feature is working as expected as well, link to the selected products are working correctly, the quantity can be amended as well with no issues (quantity doesn't go beyond 99 or below 1), 'Update' and 'Remove' buttons working as well as 'continue shopping' and 'secure checkout'.
 
