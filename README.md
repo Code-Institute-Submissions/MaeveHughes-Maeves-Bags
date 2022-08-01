@@ -488,6 +488,8 @@ if 'USE_AWS' in os.environ:
 
 - **Tawnygoody/Tarmachan**: Tawnygoody provided the building blocks for the 404 error html page.
 
+-**Harry-Leepz/Nourish-and-Lift**: Harry provided the building blocks for the add a review form.
+
 - **Youtube**: YouTube was used to help create the contact app.
 
 - **Code Institute Slack Channels**: Slack was used extensively for debugging, and to look for ideas off other students and CI staff members.
