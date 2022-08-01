@@ -13,7 +13,7 @@ from django.db.models.functions import Lower
 
 # - - - - - Internal imports - - - - - - - - -
 from .models import Product, Category
-from .forms import ProductForm
+from .forms import ReviewForm, ProductForm
 
 # pylint: disable=no-member
 
